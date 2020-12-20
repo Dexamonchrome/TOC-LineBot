@@ -8,7 +8,7 @@ from linebot.exceptions import InvalidSignatureError
 from linebot.models import MessageEvent, TextMessage, TextSendMessage
 
 from fsm import TocMachine
-from utils import send_text_message, send_go_to_menu_button
+from utils import send_text_message, send_go_to_menu_button, send_IP12_carousel
 
 load_dotenv()
 machine = {}
