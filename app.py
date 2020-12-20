@@ -62,7 +62,7 @@ def webhook_handler():
 
     return "OK"
 
-@app.route("/hello")
+@app.route("/hello"):
 def haha()
     return "hi"
 
