@@ -117,6 +117,7 @@ class TocMachine(GraphMachine):
         text = event.message.text
         return "fsm" in str(text).lower()
 
+
     #on enter
     def on_enter_menu(self, event):
         print("I'm entering menu")
@@ -187,3 +188,8 @@ class TocMachine(GraphMachine):
         reply_token = event.reply_token
         text = "The Antutu Benchmark score of Iphone 12 is 598,478."
         send_text_message(reply_token, text) 
+
+     def on_enter_fsm(self, event):
+            print("I'm entering fsm")
+        reply_token = event.reply_token
+        send_fsm(reply_token)
