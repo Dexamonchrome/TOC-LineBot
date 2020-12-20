@@ -2,9 +2,8 @@ from transitions.extensions import GraphMachine
 
 from utils import send_text_message
 
-from datetime import datetime
+from utils import send_text_message, send_IP12_carousel
 
-from helper import LineAPI
 
 
 class TocMachine(GraphMachine):
