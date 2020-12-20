@@ -2,35 +2,189 @@ from transitions.extensions import GraphMachine
 
 from utils import send_text_message
 
+from datetime import datetime
+
+from helper import LineAPI
+
 
 class TocMachine(GraphMachine):
-    def __init__(self, **machine_configs):
-        self.machine = GraphMachine(model=self, **machine_configs)
+    def __init__(self):
+        self.machine = GraphMachine(
+            model=self,
+            **{
+                "states" : [
+                    'start',
+                    'menu',
+                    'Apple',
+                    'IP12'
+                    'IP12_Price',
+                    'IP12_Specs',
+                    'IP12_Pros_Cons',
+                    'IP12_Benchmark_Score'
+                    'fsm'
+                ],
+                "transitions" : [
+                    {
+                        'trigger': 'advance',
+                        'source': '*',
+                        'dest': 'fsm',
+                        'conditions': 'is_going_to_fsm'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': '*',
+                        'dest': 'menu',
+                        'conditions': 'is_going_to_menu'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'menu',
+                        'dest': 'Apple',
+                        'conditions': 'is_going_to_Apple'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'Apple',
+                        'dest': 'IP12',
+                        'conditions': 'is_going_to_IP12'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'IP12',
+                        'dest': 'IP12_Price',
+                        'conditions': 'is_going_to_IP12_Price'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'IP12',
+                        'dest': 'IP12_Specs',
+                        'conditions': 'is_going_to_IP12_Specs'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'IP12',
+                        'dest': 'IP12_Pros_Cons',
+                        'conditions': 'is_going_to_IP12_Pros_Cons'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'IP12',
+                        'dest': 'IP12_Benchmark_Score',
+                        'conditions': 'is_going_to_IP12_Benchmark_Score'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'fsm',
+                        'dest': 'menu',
+                        'conditions': 'is_going_to_menu'
+                    },
+                   
+                ],
+                "initial" : 'start',
+                "auto_transitions" : False,
+                "show_conditions": True,
+            },
+        )
 
-    def is_going_to_state1(self, event):
+    def is_going_to_menu(self, event):
         text = event.message.text
-        return text.lower() == "go to state1"
-
-    def is_going_to_state2(self, event):
+        return "Menu" in text
+    
+    def is_going_to_Apple(self, event):
         text = event.message.text
-        return text.lower() == "go to state2"
+        return "Apple" in text 
 
-    def on_enter_state1(self, event):
-        print("I'm entering state1")
+    def is_going_to_IP12(self, event):
+        text = event.message.text
+        return "Iphone 12" in text 
+    
+    def is_going_to_IP12_Price(self, event):
+        text = event.message.text
+        return "Iphone 12 Price" in text 
 
+    def is_going_to_IP12_Specs(self, event):
+        text = event.message.text
+        return "Iphone 12 Specs" in text 
+
+    def is_going_to_IP12_Pros_Cons(self, event):
+        text = event.message.text
+        return "Iphone 12 Pros and Cons" in text 
+
+    def is_going_to_IP12_Benchmark_Score(self, event):
+        text = event.message.text
+        return "Iphone 12 Benchmark Score" in text 
+
+    def is_going_to_fsm(self, event):
+        text = event.message.text
+        return "fsm" in str(text).lower()
+
+    #on enter
+    def on_enter_menu(self, event):
+        print("I'm entering menu")
         reply_token = event.reply_token
-        send_text_message(reply_token, "Trigger state1")
-        self.go_back()
+        send_text_message(reply_token, text)
 
-    def on_exit_state1(self):
-        print("Leaving state1")
-
-    def on_enter_state2(self, event):
-        print("I'm entering state2")
-
+    def on_enter_Apple(self, event):
+        print("I'm entering Apple")
         reply_token = event.reply_token
-        send_text_message(reply_token, "Trigger state2")
-        self.go_back()
+        text = "Please choose an Apple smartphone that you want to know about!"
+        send_text_message(reply_token, text)
 
-    def on_exit_state2(self):
-        print("Leaving state2")
+    def on_enter_IP12(self, event):
+        print("I'm entering Iphone 12")
+        reply_token = event.reply_token
+        text = "Please choose which information you want to know!"
+        send_IP12_carousel(reply_token)
+
+    def on_enter_IP12_Price(self, event):
+        print("I'm entering Iphone 12's price")
+        reply_token = event.reply_token
+        text = "The Price of Iphone 12 is $1,129.00"
+        send_text_message(reply_token, text)
+
+    def on_enter_IP12_Specs(self, event):
+        print("I'm entering Iphone 12's specs")
+        reply_token = event.reply_token
+        myTuple = (
+        "Body: Aluminum frame with matte finish, Ceramic Shield front with oleophobic coating, Glass back with glossy finish, IP68 certified for water and dust resistance. Black, White, Green, Blue, Red color options. 146.7 x 71.5 x 7.4 mm, 164 g.", 
+        "Display: 6.1 Retina XDR OLED screen of 1170 x 2532 px resolution, 460ppi, 600 nits, 120Hz touch sensing. HDR10, Dolby Vision support, wide color gamut. True Tone.", 
+        "Chipset: Apple A14 Bionic chip (5nm) - Hexa-core (2x3.1 GHz Firestorm + 4x1.8 GHz Icestorm with 3.1GHz Turboboost) Apple CPU, four-core Apple GPU, 16-core Apple NPU 4-gen",
+        "Memory: 4GB of RAM; 64/128/256GB of internal storage",
+        "Rear camera: Dual 12MP camera: 26mm main wide-angle, F/1.6, OIS, Dual Pixel AF; 13mm ultrawide-angle, F/2.4, 120-degree field of view; dual-LED flash with slow sync. Night Mode, Smart HDR 3, Deep Fusion.",
+        "Video recording: 2160p@60/30fps, 1080p@30/60/120/240fps video recording with wider dynamic range and spatial sound, OIS + EIS, Dolby Vision (30fps only)",
+        "Front camera: Dual camera - 23mm 12MP F/2.2 front-facing camera with HDR mode + 3D TOF camera; Night Mode, Smart HDR 3, Deep Fusion. 2160p@60/30fps, 1080p@30/60/120fps video recording with wider dynamic range and spatial sound, EIS.",
+        "Connectivity: Dual SIM, 5G, 4G; Wi-Fi a/b/g/n/ac/6; Bluetooth 5.0; Lightning port; GPS with A-GPS, GLONASS, GALILEO, QZSS; NFC; Apple U1 chip ultrawideband",
+        "Battery: 2,815 mAh battery, 20W fast charging, 15 Qi wireless charging (MagSafe)",
+        "Misc: Face ID through dedicated TrueDepth camera, stereo speakers, Taptic Engine")
+
+        x = "\n\n".join(myTuple)
+
+        text = x
+        send_text_message(reply_token, text)
+
+    def on_enter_IP12_Pros_Cons(self, event):
+        print("I'm entering Iphone 12's pros and cons")
+        reply_token = event.reply_token
+        myTuple = (
+        "Pros",
+        "Attractive design with exquisite fit and premium finish",
+        "Excellent OLED screen, very bright",
+        "Loud stereo speakers, superb audio quality",
+        "The fastest smartphone chip on the planet, 5G, too",
+        "Good photo quality across the board, day and night",
+        "LiDAR Scanner has varied applications and use cases (albeit quite niche)",
+        "Consistently good video quality",
+        "Apple iOS 14 is fast and easy to use, 5 years of guaranteed major updates",
+        "MagSafe is a promising accessory concept"
+        )
+
+        x = "\n\n".join(myTuple)
+        
+        text = x
+        send_text_message(reply_token, text)
+
+    def on_enter_IP12_Benchmark_Score(self, event):
+        print("I'm entering Iphone 12's price")
+        reply_token = event.reply_token
+        text = "The Antutu Benchmark score of Iphone 12 is 598,478."
+        send_text_message(reply_token, text) 
