@@ -52,7 +52,7 @@ def send_IP12_carousel(reply_token):
                 ),
                 CarouselColumn(
                     title="Specs",
-                    text="Wanna see what is the internal and external hardware of the device?",
+                    text="Wanna see the specs of the device?",
                     thumbnail_image_url="https://www.gsma.com/esim/wp-content/uploads/2012/10/Specifications.jpg",
                     actions=[
                         MessageTemplateAction(
@@ -63,7 +63,7 @@ def send_IP12_carousel(reply_token):
                 ),
                 CarouselColumn(
                     title="Pros and Cons",
-                    text="Wanna know what is bad and good about the device?。",
+                    text="Wanna know the pros and cons?。",
                     thumbnail_image_url="https://ardas-it.com/uploads/images/blogs/Pros-And-Cons-blog.jpg",
                     actions=[
                         MessageTemplateAction(
