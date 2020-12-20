@@ -25,7 +25,7 @@ def send_go_to_menu_button(reply_token):
                     text="Menu"
                 ),
                 MessageTemplateAction(
-                    label="Do we have to?",
+                    label="Do we have?",
                     text="Menu"
                 ),
             ]
@@ -79,7 +79,7 @@ def send_IP12_carousel(reply_token):
                     actions=[
                         MessageTemplateAction(
                             label="Inquire",
-                            text="Alright! Let's check the Antutu Benchmark Score of Iphone 12!"
+                            text="Alright! Let's check the Benchmark Score!"
                         ),
                     ]
                 ),
