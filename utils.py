@@ -25,7 +25,7 @@ def send_go_to_menu_button(reply_token):
                     text="Menu"
                 ),
                 MessageTemplateAction(
-                    label="Do we really have to go back?",
+                    label="Do we have to?",
                     text="Menu"
                 ),
             ]
