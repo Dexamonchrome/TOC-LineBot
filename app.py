@@ -62,6 +62,10 @@ def webhook_handler():
 
     return "OK"
 
+@app.route("/hello")
+def haha()
+    return "hi"
+
 
 @app.route("/show-fsm", methods=["GET"])
 def show_fsm():
