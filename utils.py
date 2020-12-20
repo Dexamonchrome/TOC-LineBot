@@ -1,11 +1,12 @@
 import os
+import json
 
 from linebot import LineBotApi, WebhookParser
 from linebot.models import MessageEvent, TextMessage, FlexSendMessage, TextSendMessage, CarouselTemplate, CarouselColumn, MessageTemplateAction, TemplateSendMessage, ConfirmTemplate, QuickReply, QuickReplyButton, MessageAction, ImageSendMessage
 
 
 channel_access_token = os.getenv("LINE_CHANNEL_ACCESS_TOKEN", None)
-
+line_bot_api = LineBotApi(str(channel_access_token))
 
 def send_text_message(reply_token, text):
     line_bot_api = LineBotApi(channel_access_token)
