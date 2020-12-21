@@ -29,6 +29,7 @@ class TocMachine(GraphMachine):
                         'dest': 'fsm',
                         'conditions': 'is_going_to_fsm'
                     },
+                    """
                     {
                         'trigger': 'advance',
                         'source': '*',
@@ -38,6 +39,13 @@ class TocMachine(GraphMachine):
                     {
                         'trigger': 'advance',
                         'source': 'Menu',
+                        'dest': 'IP12',
+                        'conditions': 'is_going_to_IP12'
+                    },
+                    """
+                    {
+                        'trigger': 'advance',
+                        'source': '*',
                         'dest': 'IP12',
                         'conditions': 'is_going_to_IP12'
                     },
