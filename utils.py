@@ -98,7 +98,7 @@ def send_Menu_carousel(reply_token):
                 CarouselColumn(
                     title="Apple",
                     text="Wanna own an Apple phone?",
-                    thumbnail_image_url="https://everyaustraliancounts.com.au/wp-content/uploads/price-wood.jpg",
+                    thumbnail_image_url="https://as-images.apple.com/is/og-default?wid=1200&hei=630&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1525370171638",
                     actions=[
                         MessageTemplateAction(
                             label="Inquire",
@@ -109,7 +109,7 @@ def send_Menu_carousel(reply_token):
                 CarouselColumn(
                     title="Samsung",
                     text="Wanna own a Samsung phone?",
-                    thumbnail_image_url="https://www.gsma.com/esim/wp-content/uploads/2012/10/Specifications.jpg",
+                    thumbnail_image_url="https://www.designyourway.net/blog/wp-content/uploads/2019/10/s1-57.jpg",
                     actions=[
                         MessageTemplateAction(
                             label="Inquire",
@@ -120,7 +120,7 @@ def send_Menu_carousel(reply_token):
                 CarouselColumn(
                     title="Google",
                     text="Wanna own a Google phone?",
-                    thumbnail_image_url="https://ardas-it.com/uploads/images/blogs/Pros-And-Cons-blog.jpg",
+                    thumbnail_image_url="https://images.theconversation.com/files/93616/original/image-20150902-6700-t2axrz.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1000&fit=clip",
                     actions=[
                         MessageTemplateAction(
                             label="Inquire",
@@ -131,7 +131,7 @@ def send_Menu_carousel(reply_token):
                 CarouselColumn(
                     title="Huawei",
                     text="Wanna own a Huawei phone?",
-                    thumbnail_image_url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkTpTs5D_l_o2c9OAvFTC7ZW4VEowytaFm0Q&usqp=CAU",
+                    thumbnail_image_url="https://3axis.co/user-images/e1gkwldo.png",
                     actions=[
                         MessageTemplateAction(
                             label="Inquire",
