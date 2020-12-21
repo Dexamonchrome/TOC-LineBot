@@ -363,7 +363,7 @@ class TocMachine(GraphMachine):
         reply_token = event.reply_token
         #text = "Please choose which information you want to know!"
         #send_text_message(reply_token, text)
-        send_IP12_Pro_carousel(reply_token, name)
+        send_IP12_Pro_carousel(reply_token)
 
     def on_enter_IP12_Pro_Price(self, event):
         print("I'm entering Iphone 12 Pro's price")
