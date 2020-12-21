@@ -149,8 +149,8 @@ class TocMachine(GraphMachine):
     def on_enter_IP12(self, event):
         print("I'm entering Iphone 12")
         reply_token = event.reply_token
-        text = "Please choose which information you want to know!"
-        send_text_message(reply_token, text)
+        #text = "Please choose which information you want to know!"
+        #send_text_message(reply_token, text)
         send_IP12_carousel(reply_token)
 
     def on_enter_IP12_Price(self, event):
