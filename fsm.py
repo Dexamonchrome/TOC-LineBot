@@ -76,6 +76,12 @@ class TocMachine(GraphMachine):
                     {
                         'trigger': 'advance',
                         'source': 'IP12',
+                        'dest': 'Menu',
+                        'conditions': 'is_going_to_Menu'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'IP12',
                         'dest': 'IP12_Price',
                         'conditions': 'is_going_to_IP12_Price'
                     },
@@ -84,6 +90,18 @@ class TocMachine(GraphMachine):
                         'source': 'IP12_Price',
                         'dest': 'IP12',
                         'conditions': 'go_back_to_IP12'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'IP12_Price',
+                        'dest': 'Apple',
+                        'conditions': 'is_going_to_Apple'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'IP12_Price',
+                        'dest': 'Menu',
+                        'conditions': 'is_going_to_Menu'
                     },
                     {
                         'trigger': 'advance',
@@ -99,6 +117,18 @@ class TocMachine(GraphMachine):
                     },
                     {
                         'trigger': 'advance',
+                        'source': 'IP12_Specs',
+                        'dest': 'Apple',
+                        'conditions': 'is_going_to_Apple'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'IP12_Specs',
+                        'dest': 'Menu',
+                        'conditions': 'is_going_to_Menu'
+                    },
+                    {
+                        'trigger': 'advance',
                         'source': 'IP12',
                         'dest': 'IP12_Pros_Cons',
                         'conditions': 'is_going_to_IP12_Pros_Cons'
@@ -108,6 +138,18 @@ class TocMachine(GraphMachine):
                         'source': 'IP12_Pros_Cons',
                         'dest': 'IP12',
                         'conditions': 'go_back_to_IP12'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'IP12_Pros_Cons',
+                        'dest': 'Menu',
+                        'conditions': 'is_going_to_Menu'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'IP12_Pros_Cons',
+                        'dest': 'Apple',
+                        'conditions': 'is_going_to_Apple'
                     },
                     {
                         'trigger': 'advance',
@@ -121,10 +163,22 @@ class TocMachine(GraphMachine):
                         'dest': 'IP12',
                         'conditions': 'go_back_to_IP12'
                     },
+                    {
+                        'trigger': 'advance',
+                        'source': 'IP12_Benchmark_Score',
+                        'dest': 'Menu',
+                        'conditions': 'is_going_to_Menu'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'IP12_Benchmark_Score',
+                        'dest': 'Apple',
+                        'conditions': 'is_going_to_Apple'
+                    },
 
                     #Iphone 12 Pro
 
-                    {
+                     {
                         'trigger': 'advance',
                         'source': 'Apple',
                         'dest': 'IP12_Pro',
@@ -135,6 +189,12 @@ class TocMachine(GraphMachine):
                         'source': 'IP12_Pro',
                         'dest': 'Apple',
                         'conditions': 'is_going_to_Apple'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'IP12_Pro',
+                        'dest': 'Menu',
+                        'conditions': 'is_going_to_Menu'
                     },
                     {
                         'trigger': 'advance',
@@ -150,6 +210,18 @@ class TocMachine(GraphMachine):
                     },
                     {
                         'trigger': 'advance',
+                        'source': 'IP12_Pro_Price',
+                        'dest': 'Apple',
+                        'conditions': 'is_going_to_Apple'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'IP12_Pro_Price',
+                        'dest': 'Menu',
+                        'conditions': 'is_going_to_Menu'
+                    },
+                    {
+                        'trigger': 'advance',
                         'source': 'IP12_Pro',
                         'dest': 'IP12_Pro_Specs',
                         'conditions': 'is_going_to_IP12_Pro_Specs'
@@ -159,6 +231,18 @@ class TocMachine(GraphMachine):
                         'source': 'IP12_Pro_Specs',
                         'dest': 'IP12_Pro',
                         'conditions': 'go_back_to_IP12_Pro'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'IP12_Pro_Specs',
+                        'dest': 'Apple',
+                        'conditions': 'is_going_to_Apple'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'IP12_Pro_Specs',
+                        'dest': 'Menu',
+                        'conditions': 'is_going_to_Menu'
                     },
                     {
                         'trigger': 'advance',
@@ -174,6 +258,18 @@ class TocMachine(GraphMachine):
                     },
                     {
                         'trigger': 'advance',
+                        'source': 'IP12_Pro_Pros_Cons',
+                        'dest': 'Menu',
+                        'conditions': 'is_going_to_Menu'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'IP12_Pro_Pros_Cons',
+                        'dest': 'Apple',
+                        'conditions': 'is_going_to_Apple'
+                    },
+                    {
+                        'trigger': 'advance',
                         'source': 'IP12_Pro',
                         'dest': 'IP12_Pro_Benchmark_Score',
                         'conditions': 'is_going_to_IP12_Pro_Benchmark_Score'
@@ -183,6 +279,18 @@ class TocMachine(GraphMachine):
                         'source': 'IP12_Pro_Benchmark_Score',
                         'dest': 'IP12_Pro',
                         'conditions': 'go_back_to_IP12_Pro'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'IP12_Pro_Benchmark_Score',
+                        'dest': 'Menu',
+                        'conditions': 'is_going_to_Menu'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'IP12_Pro_Benchmark_Score',
+                        'dest': 'Apple',
+                        'conditions': 'is_going_to_Apple'
                     },
 
                     #Iphone 12 Mini
@@ -213,6 +321,18 @@ class TocMachine(GraphMachine):
                     },
                     {
                         'trigger': 'advance',
+                        'source': 'IP12_Mini_Price',
+                        'dest': 'Menu',
+                        'conditions': 'is_going_to_Menu'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'IP12_Mini_Price',
+                        'dest': 'Apple',
+                        'conditions': 'is_going_to_Apple'
+                    },
+                    {
+                        'trigger': 'advance',
                         'source': 'IP12_Mini',
                         'dest': 'IP12_Mini_Specs',
                         'conditions': 'is_going_to_IP12_Mini_Specs'
@@ -222,6 +342,18 @@ class TocMachine(GraphMachine):
                         'source': 'IP12_Mini_Specs',
                         'dest': 'IP12_Mini',
                         'conditions': 'go_back_to_IP12_Mini'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'IP12_Mini_Specs',
+                        'dest': 'Menu',
+                        'conditions': 'is_going_to_Menu'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'IP12_Mini_Specs',
+                        'dest': 'Apple',
+                        'conditions': 'is_going_to_Apple'
                     },
                     {
                         'trigger': 'advance',
@@ -237,6 +369,18 @@ class TocMachine(GraphMachine):
                     },
                     {
                         'trigger': 'advance',
+                        'source': 'IP12_Mini_Pros_Cons',
+                        'dest': 'Menu',
+                        'conditions': 'is_going_to_Menu'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'IP12_Mini_Pros_Cons',
+                        'dest': 'Apple',
+                        'conditions': 'is_going_to_Apple'
+                    },
+                    {
+                        'trigger': 'advance',
                         'source': 'IP12_Mini',
                         'dest': 'IP12_Mini_Benchmark_Score',
                         'conditions': 'is_going_to_IP12_Mini_Benchmark_Score'
@@ -246,6 +390,18 @@ class TocMachine(GraphMachine):
                         'source': 'IP12_Mini_Benchmark_Score',
                         'dest': 'IP12_Mini',
                         'conditions': 'go_back_to_IP12_Mini'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'IP12_Mini_Benchmark_Score',
+                        'dest': 'Menu',
+                        'conditions': 'is_going_to_Menu'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'IP12_Mini__Benchmark_Score',
+                        'dest': 'Apple',
+                        'conditions': 'is_going_to_Apple'
                     },
 
                     {
@@ -472,7 +628,7 @@ class TocMachine(GraphMachine):
         print("I'm entering Iphone 12 Pro's price")
         reply_token = event.reply_token
         word = "Price"
-        information = "The Price of Iphone 12 Pro is\n 128GB: NTD 33900.00\n 256GB: NTD 37400.00\n, 512GB: NTD 44000.00"
+        information = "The Price of Iphone 12 Pro is\n 128GB: NTD 33900.00\n 256GB: NTD 37400.00\n 512GB: NTD 44000.00"
         current = "Iphone 12 Pro"
         brand = "Apple"
         send_info(reply_token, word, information, current, brand)
