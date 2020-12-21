@@ -79,6 +79,7 @@ class TocMachine(GraphMachine):
                         'dest': 'Menu',
                         'conditions': 'is_going_to_Menu'
                     },
+                    
                     {
                         'trigger': 'advance',
                         'source': 'IP12',
@@ -100,6 +101,13 @@ class TocMachine(GraphMachine):
                     },
                     {
                         'trigger': 'advance',
+                        'source': 'IP12_Price',
+                        'dest': 'IP12',
+                        'conditions': 'is_going_to_IP12'
+                    },
+
+                    {
+                        'trigger': 'advance',
                         'source': 'IP12',
                         'dest': 'IP12_Specs',
                         'conditions': 'is_going_to_IP12_Specs'
@@ -116,6 +124,12 @@ class TocMachine(GraphMachine):
                         'source': 'IP12_Specs',
                         'dest': 'Menu',
                         'conditions': 'is_going_to_Menu'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'IP12_Specs',
+                        'dest': 'IP12',
+                        'conditions': 'is_going_to_IP12'
                     },
                     {
                         'trigger': 'advance',
@@ -138,6 +152,12 @@ class TocMachine(GraphMachine):
                     },
                     {
                         'trigger': 'advance',
+                        'source': 'IP12_Pros_Cons',
+                        'dest': 'IP12',
+                        'conditions': 'is_going_to_IP12'
+                    },
+                    {
+                        'trigger': 'advance',
                         'source': 'IP12',
                         'dest': 'IP12_Benchmark_Score',
                         'conditions': 'is_going_to_IP12_Benchmark_Score'
@@ -148,6 +168,12 @@ class TocMachine(GraphMachine):
                         'source': 'IP12_Benchmark_Score',
                         'dest': 'Menu',
                         'conditions': 'is_going_to_Menu'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'IP12_Benchmark_Score',
+                        'dest': 'IP12',
+                        'conditions': 'is_going_to_IP12'
                     },
                     {
                         'trigger': 'advance',
