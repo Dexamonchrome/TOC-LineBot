@@ -266,20 +266,16 @@ class TocMachine(GraphMachine):
         text = event.message.text
         return "Menu" in text
     
-    def is_going_to_fsm(self, event):
-        text = event.message.text
-        return "fsm" in str(text).lower()
-
     #Apple
     def is_going_to_Apple(self, event):
         text = event.message.text
         return "Apple" in text 
-
+    
     # Iphone 12
     def is_going_to_IP12(self, event):
         text = event.message.text
         return "Iphone 12" and "Mini" not in text and "Pro" not in text
-
+    
     def is_going_to_IP12_Price(self, event):
         text = event.message.text
         return "Iphone 12" and "Mini" not in text and "Pro" not in text and "Price" in text 
@@ -296,15 +292,19 @@ class TocMachine(GraphMachine):
         text = event.message.text
         return "Iphone 12" and "Mini" not in text and "Pro" not in text and "Benchmark Score" in text  
 
+    def is_going_to_fsm(self, event):
+        text = event.message.text
+        return "fsm" in str(text).lower()
+
     def go_back_to_IP12(self, event):
         text = event.message.text
         return "Iphone 12" and "Mini" not in text and "Pro" not in text
-
+    
     # Iphone 12 Pro
     def is_going_to_IP12_Pro(self, event):
         text = event.message.text
         return "Iphone 12" and "Mini" not in text and "Pro" in text
-
+    
     def is_going_to_IP12_Pro_Price(self, event):
         text = event.message.text
         return "Iphone 12 Pro Price" in text 
@@ -324,7 +324,7 @@ class TocMachine(GraphMachine):
     def go_back_to_IP12_Pro(self, event):
         text = event.message.text
         return "Iphone 12 Pro" and "Mini" not in text and "Pro" in text
-
+    
 
     # Iphone 12 Mini
     def is_going_to_IP12_Mini(self, event):
@@ -358,12 +358,6 @@ class TocMachine(GraphMachine):
         #send_text_message(reply_token, text)
         #send_go_to_menu_button(reply_token)
         send_Menu_carousel(reply_token)
-
-    def on_enter_fsm(self, event):
-        print("I'm entering fsm")
-        reply_token = event.reply_token
-        send_fsm(reply_token)
-
     # back to Iphone 12
     def on_enter_Back_IP12(self,event):
         print("I'm entering Iphone 12")
@@ -453,7 +447,7 @@ class TocMachine(GraphMachine):
         information = x
         current = "Iphone 12"
         send_info(reply_token, word, information, current) 
-
+    
     #Iphone 12 Pro
     def on_enter_Back_IP12_Pro(self,event):
         print("I'm entering Iphone 12 Pro")
@@ -538,7 +532,7 @@ class TocMachine(GraphMachine):
         information = x
         current = "Iphone 12 Pro"
         send_info(reply_token, word, information, current) 
-
+    
     #Iphone 12 Mini
     def on_enter_IP12_Mini(self, event):
         print("I'm entering Iphone 12 Mini")
@@ -617,3 +611,8 @@ class TocMachine(GraphMachine):
         information = x
         current = "Iphone 12 Mini"
         send_info(reply_token, word, information, current) 
+
+    def on_enter_fsm(self, event):
+        print("I'm entering fsm")
+        reply_token = event.reply_token
+        send_fsm(reply_token)
