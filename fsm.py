@@ -55,6 +55,12 @@ class TocMachine(GraphMachine):
                     },
                     {
                         'trigger': 'advance',
+                        'source': 'IP12_Specs',
+                        'dest': 'IP12',
+                        'conditions': 'is_going_to_IP12'
+                    },
+                    {
+                        'trigger': 'advance',
                         'source': 'IP12',
                         'dest': 'IP12_Pros_Cons',
                         'conditions': 'is_going_to_IP12_Pros_Cons'
