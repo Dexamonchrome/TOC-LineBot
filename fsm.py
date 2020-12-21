@@ -346,7 +346,7 @@ class TocMachine(GraphMachine):
 
     def is_going_to_IP12_Mini_Benchmark_Score(self, event):
         text = event.message.text
-        return "Iphone 12 Mini" in text or "Benchmark Score" in text 
+        return "Iphone 12 Mini Benchmark Score" in text 
 
     def go_back_to_IP12_Mini(self, event):
         text = event.message.text
@@ -605,7 +605,7 @@ class TocMachine(GraphMachine):
         current = "Iphone 12 Mini"
         send_info(reply_token, word, information, current)
 
-    def on_enter_IP12__Mini_Benchmark_Score(self, event):
+    def on_enter_IP12_Mini_Benchmark_Score(self, event):
         print("I'm entering Iphone 12 Mini's Benchmark Score")
         reply_token = event.reply_token
         x = "The Antutu Benchmark score of Iphone 12 Mini is 614169."
