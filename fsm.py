@@ -288,7 +288,7 @@ class TocMachine(GraphMachine):
 
     def is_going_to_IP12_Pros_Cons(self, event):
         text = event.message.text
-        return "Iphone 12" and "Mini" not in text and "Pro" not in text and "Pros and Cons" in text   
+        return "Iphone 12" and "Mini" not in text and "Pro" not in text or "Pros and Cons" in text   
 
     def is_going_to_IP12_Benchmark_Score(self, event):
         text = event.message.text
