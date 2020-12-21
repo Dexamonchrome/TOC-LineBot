@@ -250,7 +250,7 @@ class TocMachine(GraphMachine):
 
     def go_back_to_IP12_Pro(self, event):
         text = event.message.text
-        return "Iphone 12 Pro" in text
+        return "IP12 Pro" in text
 
     #on enter
     def on_enter_Menu(self, event):
