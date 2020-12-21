@@ -33,7 +33,7 @@ class TocMachine(GraphMachine):
                         'trigger': 'advance',
                         'source': '*',
                         'dest': 'Menu',
-                        'conditions': 'is_going_to_IP12'
+                        'conditions': 'is_going_to_Menu'
                     },
                     {
                         'trigger': 'advance',
@@ -141,7 +141,8 @@ class TocMachine(GraphMachine):
         print("I'm entering menu")
         reply_token = event.reply_token
         #send_text_message(reply_token, text)
-        send_go_to_menu_button(reply_token)
+        #send_go_to_menu_button(reply_token)
+        send_IP12_carousel(reply_token)
 
 
     def on_enter_Apple(self, event):
