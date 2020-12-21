@@ -25,7 +25,7 @@ def send_go_to_menu_button(reply_token):
                     text="Menu"
                 ),
                 MessageTemplateAction(
-                    label="Do we have?",
+                    label="Do we have to?",
                     text="Menu"
                 ),
             ]
@@ -96,7 +96,7 @@ def send_fsm(reply_token):
         ImageSendMessage(
             original_content_url="https://lh3.googleusercontent.com/pw/ACtC-3dv0dTn-45EryPyNIWrarZAj0aD35QyV0CPNu1nTkQP1tdY5q8EvpGFuJFegz9Pkr0Le8pe6p2kNcXvHwLPAlOVJ1YvnuTlAeZoSGTwb50NGKfksvFIiYalFEEfBCssWHwDFYIl5xC_3cQn_4Ls0GE=w2258-h772-no?authuser=2",
             preview_image_url="https://lh3.googleusercontent.com/pw/ACtC-3dv0dTn-45EryPyNIWrarZAj0aD35QyV0CPNu1nTkQP1tdY5q8EvpGFuJFegz9Pkr0Le8pe6p2kNcXvHwLPAlOVJ1YvnuTlAeZoSGTwb50NGKfksvFIiYalFEEfBCssWHwDFYIl5xC_3cQn_4Ls0GE=w2258-h772-no?authuser=2",
-            quick_reply=QuickReply(items=[QuickReplyButton(action = MessageAction(label='Go back to menu', text='menu'))])
+            quick_reply=QuickReply(items=[QuickReplyButton(action = MessageAction(label='Go back to menu', text='Menu'))])
             )
         )
     return "OK"
@@ -107,4 +107,11 @@ def send_image_url(id, img_url):
 
 def send_button_message(id, text, buttons):
     pass
+
+{
+                        'trigger': 'advance',
+                        'source': 'Apple',
+                        'dest': 'IP12',
+                        'conditions': 'is_going_to_IP12'
+                    },
 """

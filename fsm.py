@@ -2,7 +2,7 @@ from transitions.extensions import GraphMachine
 
 from utils import send_text_message
 
-from utils import send_text_message, send_IP12_carousel
+from utils import send_text_message, send_IP12_carousel, send_fsm
 
 
 
@@ -13,7 +13,7 @@ class TocMachine(GraphMachine):
             **{
                 "states" : [
                     'start',
-                    'menu',
+                    'Menu',
                     'Apple',
                     'IP12'
                     'IP12_Price',
@@ -32,18 +32,12 @@ class TocMachine(GraphMachine):
                     {
                         'trigger': 'advance',
                         'source': '*',
-                        'dest': 'menu',
-                        'conditions': 'is_going_to_menu'
+                        'dest': 'Menu',
+                        'conditions': 'is_going_to_Menu'
                     },
                     {
                         'trigger': 'advance',
-                        'source': 'menu',
-                        'dest': 'Apple',
-                        'conditions': 'is_going_to_Apple'
-                    },
-                    {
-                        'trigger': 'advance',
-                        'source': 'Apple',
+                        'source': 'Menu',
                         'dest': 'IP12',
                         'conditions': 'is_going_to_IP12'
                     },
@@ -85,7 +79,7 @@ class TocMachine(GraphMachine):
             },
         )
 
-    def is_going_to_menu(self, event):
+    def is_going_to_Menu(self, event):
         text = event.message.text
         return "Menu" in text
     
@@ -119,7 +113,7 @@ class TocMachine(GraphMachine):
 
 
     #on enter
-    def on_enter_menu(self, event):
+    def on_enter_Menu(self, event):
         print("I'm entering menu")
         reply_token = event.reply_token
         send_text_message(reply_token, text)
