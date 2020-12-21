@@ -305,7 +305,7 @@ class TocMachine(GraphMachine):
     # Iphone 12 Pro
     def is_going_to_IP12_Pro(self, event):
         text = event.message.text
-        return "Iphone 12" in text and "Pro" in text and "Mini" not in text
+        return "Iphone 12 Pro" in text and "Mini" not in text
     
     def is_going_to_IP12_Pro_Price(self, event):
         text = event.message.text
@@ -325,13 +325,12 @@ class TocMachine(GraphMachine):
 
     def go_back_to_IP12_Pro(self, event):
         text = event.message.text
-        return "Iphone 12" in text and "Pro" in text and "Mini" not in text
+        return "Iphone 12 Pro" in text and "Mini" not in text
 
     # Iphone 12 Mini
     def is_going_to_IP12_Pro(self, event):
         text = event.message.text
         return "Iphone 12" in text and "Mini" in text
-    
     def is_going_to_IP12_Mini_Price(self, event):
         text = event.message.text
         return "Iphone 12 Mini Price" in text 
