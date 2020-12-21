@@ -46,7 +46,7 @@ def send_IP12_carousel(reply_token):
                     actions=[
                         MessageTemplateAction(
                             label="Inquire",
-                            text="Alright! Let's check the price!"
+                            text="Iphone 12 Price"
                         ),
                     ]
                 ),
@@ -57,7 +57,7 @@ def send_IP12_carousel(reply_token):
                     actions=[
                         MessageTemplateAction(
                             label="Inquire",
-                            text="Alright! Let's check the specs!"
+                            text="Iphone 12 Specs"
                         ),
                     ]
                 ),
@@ -68,7 +68,7 @@ def send_IP12_carousel(reply_token):
                     actions=[
                         MessageTemplateAction(
                             label="Inquire",
-                            text="Alright! Let's check the Pros and Cons!"
+                            text="Iphone 12 Pros and Cons"
                         ),
                     ]
                 ),
@@ -79,7 +79,7 @@ def send_IP12_carousel(reply_token):
                     actions=[
                         MessageTemplateAction(
                             label="Inquire",
-                            text="Alright! Let's check the Benchmark Score!"
+                            text="Iphone 12 Benchmark Score"
                         ),
                     ]
                 ),
