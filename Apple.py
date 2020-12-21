@@ -29,10 +29,6 @@ def is_going_to_IP12_Benchmark_Score(self, event):
     text = event.message.text
     return "Iphone 12" and "Mini" not in text and "Pro" not in text and "Benchmark Score" in text  
 
-def is_going_to_fsm(self, event):
-    text = event.message.text
-    return "fsm" in str(text).lower()
-
 def go_back_to_IP12(self, event):
     text = event.message.text
     return "Iphone 12" and "Mini" not in text and "Pro" not in text
@@ -87,14 +83,6 @@ def go_back_to_IP12_Mini(self, event):
     text = event.message.text
     return "Iphone 12" and "Mini" in text and "Pro" not in text
 
-#on enter
-def on_enter_Menu(self, event):
-    print("I'm entering menu")
-    reply_token = event.reply_token
-    #text = ("Iphone 12 Menu")
-    #send_text_message(reply_token, text)
-    #send_go_to_menu_button(reply_token)
-    send_Menu_carousel(reply_token)
 # back to Iphone 12
 def on_enter_Back_IP12(self,event):
     print("I'm entering Iphone 12")

@@ -265,6 +265,19 @@ class TocMachine(GraphMachine):
     def is_going_to_Menu(self, event):
         text = event.message.text
         return "Menu" in text
+    
+    def is_going_to_fsm(self, event):
+        text = event.message.text
+        return "fsm" in str(text).lower()
+
+    #on enter
+    def on_enter_Menu(self, event):
+        print("I'm entering menu")
+        reply_token = event.reply_token
+        #text = ("Iphone 12 Menu")
+        #send_text_message(reply_token, text)
+        #send_go_to_menu_button(reply_token)
+        send_Menu_carousel(reply_token)
 
     def on_enter_fsm(self, event):
         print("I'm entering fsm")
