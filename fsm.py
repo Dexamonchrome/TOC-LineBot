@@ -172,14 +172,14 @@ class TocMachine(GraphMachine):
                     {
                         'trigger': 'advance',
                         'source': 'IP12_Benchmark_Score',
-                        'dest': 'IP12',
-                        'conditions': 'is_going_to_IP12'
+                        'dest': 'Apple',
+                        'conditions': 'is_going_to_Apple'
                     },
                     {
                         'trigger': 'advance',
                         'source': 'IP12_Benchmark_Score',
-                        'dest': 'Apple',
-                        'conditions': 'is_going_to_Apple'
+                        'dest': 'IP12',
+                        'conditions': 'is_going_to_IP12'
                     },
 
                     #Iphone 12 Pro
