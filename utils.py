@@ -22,11 +22,11 @@ def send_go_to_menu_button(reply_token):
             actions=[
                 MessageTemplateAction(
                     label="Go back to Menu",
-                    text="Menu"
+                    text="Iphone 12 Menu"
                 ),
                 MessageTemplateAction(
                     label="Do we have to?",
-                    text="Menu"
+                    text="Iphone 12 Menu"
                 ),
             ]
         )
