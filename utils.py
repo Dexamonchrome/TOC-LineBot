@@ -117,12 +117,6 @@ def send_info(reply_token, word, information, current):
                         "contents": [
                         {
                             "type": "text",
-                            "text": "增加找到的機率？！",
-                            "size": "sm",
-                            "weight": "bold"
-                        },
-                        {
-                            "type": "text",
                             "text": information,
                             "wrap": True,
                         },
