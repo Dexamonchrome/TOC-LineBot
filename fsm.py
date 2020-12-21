@@ -290,7 +290,7 @@ class TocMachine(GraphMachine):
 
     def is_going_to_IP12_Benchmark_Score(self, event):
         text = event.message.text
-        return "Iphone 12" and "Mini" not in text and "Pro" not in text and "Benchmark Score" in text  
+        return "Iphone 12" and "Mini" not in text and "Pro" not in text or "Benchmark Score" in text  
 
     def is_going_to_fsm(self, event):
         text = event.message.text
