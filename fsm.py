@@ -69,7 +69,7 @@ class TocMachine(GraphMachine):
                         'trigger': 'advance',
                         'source': 'IP12_Price',
                         'dest': 'IP12',
-                        'conditions': 'is_going_to_IP12'
+                        'conditions': 'go_back_to_IP12'
                     },
                     {
                         'trigger': 'advance',
@@ -81,7 +81,7 @@ class TocMachine(GraphMachine):
                         'trigger': 'advance',
                         'source': 'IP12_Specs',
                         'dest': 'IP12',
-                        'conditions': 'is_going_to_IP12'
+                        'conditions': 'go_back_to_IP12'
                     },
                     {
                         'trigger': 'advance',
@@ -93,7 +93,7 @@ class TocMachine(GraphMachine):
                         'trigger': 'advance',
                         'source': 'IP12_Pros_Cons',
                         'dest': 'IP12',
-                        'conditions': 'is_going_to_IP12'
+                        'conditions': 'go_back_to_IP12'
                     },
                     {
                         'trigger': 'advance',
@@ -105,7 +105,7 @@ class TocMachine(GraphMachine):
                         'trigger': 'advance',
                         'source': 'IP12_Benchmark_Score',
                         'dest': 'IP12',
-                        'conditions': 'is_going_to_IP12'
+                        'conditions': 'go_back_to_IP12'
                     },
                     {
                         'trigger': 'advance',
@@ -153,6 +153,9 @@ class TocMachine(GraphMachine):
         text = event.message.text
         return "fsm" in str(text).lower()
 
+    def go_back_to_IP12(self, event):
+        text = event.message.text
+        return "Iphone 12" in text 
 
     #on enter
     def on_enter_Menu(self, event):
@@ -163,6 +166,12 @@ class TocMachine(GraphMachine):
         #send_go_to_menu_button(reply_token)
         send_Menu_carousel(reply_token)
 
+    def on_enter_Back_IP12(self,event):
+        print("I'm entering Iphone 12")
+        reply_token = event.reply_token
+        #text = "Please choose which information you want to know!"
+        #send_text_message(reply_token, text)
+        send_IP12_carousel(reply_token)
 
     def on_enter_Apple(self, event):
         print("I'm entering Apple")
