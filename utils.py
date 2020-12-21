@@ -202,7 +202,7 @@ def send_IP12_Mini_carousel(reply_token):
 
     return "OK"
 
-def send_info(reply_token, word, information, current):
+def send_info(reply_token, word, information, current, brand):
     line_bot_api.reply_message(reply_token, 
         FlexSendMessage(
             "Information",
@@ -253,6 +253,15 @@ def send_info(reply_token, word, information, current):
                         "type": "message",
                         "label": "Menu",
                         "text": "Menu"
+                        },
+                        "height": "sm"
+                    },
+                    {
+                        "type": "button",
+                        "action": {
+                        "type": "message",
+                        "label": brand,
+                        "text": brand
                         },
                         "height": "sm"
                     },

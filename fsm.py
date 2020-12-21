@@ -387,7 +387,8 @@ class TocMachine(GraphMachine):
         word = "Price"
         information = "The Price of Iphone 12:\n 64GB: NTD 26900.00\n 128GB: NTD 28500.00\n 256GB: NTD 32000.00"
         current = "Iphone 12"
-        send_info(reply_token, word, information, current)
+        brand = "Apple"
+        send_info(reply_token, word, information, current, brand)
 
     def on_enter_IP12_Specs(self, event):
         print("I'm entering Iphone 12's specs")
@@ -409,7 +410,8 @@ class TocMachine(GraphMachine):
         word = "Specs"
         information = x
         current = "Iphone 12"
-        send_info(reply_token, word, information, current)
+        brand = "Apple"
+        send_info(reply_token, word, information, current, brand)
 
     def on_enter_IP12_Pros_Cons(self, event):
         print("I'm entering Iphone 12's pros and cons")
@@ -438,7 +440,8 @@ class TocMachine(GraphMachine):
         word = "Pros and Cons"
         information = x
         current = "Iphone 12"
-        send_info(reply_token, word, information, current)
+        brand = "Apple"
+        send_info(reply_token, word, information, current, brand)
 
     def on_enter_IP12_Benchmark_Score(self, event):
         print("I'm entering Iphone 12's Benchmark Score")
@@ -447,7 +450,8 @@ class TocMachine(GraphMachine):
         word = "Benchmark Score"
         information = x
         current = "Iphone 12"
-        send_info(reply_token, word, information, current) 
+        brand = "Apple"
+        send_info(reply_token, word, information, current, brand)
     
     #Iphone 12 Pro
     def on_enter_Back_IP12_Pro(self,event):
@@ -470,7 +474,8 @@ class TocMachine(GraphMachine):
         word = "Price"
         information = "The Price of Iphone 12 Pro is\n 128GB: NTD 33900.00\n 256GB: NTD 37400.00\n, 512GB: NTD 44000.00"
         current = "Iphone 12 Pro"
-        send_info(reply_token, word, information, current)
+        brand = "Apple"
+        send_info(reply_token, word, information, current, brand)
 
     def on_enter_IP12_Pro_Specs(self, event):
         print("I'm entering Iphone 12 Pro's specs")
@@ -492,7 +497,8 @@ class TocMachine(GraphMachine):
         word = "Specs"
         information = x
         current = "Iphone 12 Pro"
-        send_info(reply_token, word, information, current)
+        brand = "Apple"
+        send_info(reply_token, word, information, current, brand)
 
     def on_enter_IP12_Pro_Pros_Cons(self, event):
         print("I'm entering Iphone 12 Pro's pros and cons")
@@ -523,7 +529,8 @@ class TocMachine(GraphMachine):
         word = "Pros and Cons"
         information = x
         current = "Iphone 12 Pro"
-        send_info(reply_token, word, information, current)
+        brand = "Apple"
+        send_info(reply_token, word, information, current, brand)
 
     def on_enter_IP12_Pro_Benchmark_Score(self, event):
         print("I'm entering Iphone 12 Pro's Benchmark Score")
@@ -532,7 +539,8 @@ class TocMachine(GraphMachine):
         word = "Benchmark Score"
         information = x
         current = "Iphone 12 Pro"
-        send_info(reply_token, word, information, current) 
+        brand = "Apple"
+        send_info(reply_token, word, information, current, brand)
     
     #Iphone 12 Mini
     def on_enter_IP12_Mini(self, event):
@@ -548,7 +556,8 @@ class TocMachine(GraphMachine):
         word = "Price"
         information = "The Price of Iphone 12 Mini:\n 64GB: NTD 23900.00\n 128GB: NTD 25500.00\n 256GB: NTD 29000.00"
         current = "Iphone 12 Mini"
-        send_info(reply_token, word, information, current)
+        brand = "Apple"
+        send_info(reply_token, word, information, current, brand)
 
     def on_enter_IP12_Mini_Specs(self, event):
         print("I'm entering Iphone 12 Mini's specs")
@@ -570,7 +579,8 @@ class TocMachine(GraphMachine):
         word = "Specs"
         information = x
         current = "Iphone 12 Mini"
-        send_info(reply_token, word, information, current)
+        brand = "Apple"
+        send_info(reply_token, word, information, current, brand)
 
     def on_enter_IP12_Mini_Pros_Cons(self, event):
         print("I'm entering Iphone 12 Mini's pros and cons")
@@ -602,7 +612,8 @@ class TocMachine(GraphMachine):
         word = "Pros and Cons"
         information = x
         current = "Iphone 12 Mini"
-        send_info(reply_token, word, information, current)
+        brand = "Apple"
+        send_info(reply_token, word, information, current, brand)
 
     def on_enter_IP12_Mini_Benchmark_Score(self, event):
         print("I'm entering Iphone 12 Mini's Benchmark Score")
@@ -611,7 +622,8 @@ class TocMachine(GraphMachine):
         word = "Benchmark Score"
         information = x
         current = "Iphone 12 Mini"
-        send_info(reply_token, word, information, current) 
+        brand = "Apple"
+        send_info(reply_token, word, information, current, brand)
 
     def on_enter_fsm(self, event):
         print("I'm entering fsm")
