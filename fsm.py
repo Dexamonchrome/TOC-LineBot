@@ -113,7 +113,7 @@ class TocMachine(GraphMachine):
                         'dest': 'IP12',
                         'conditions': 'go_back_to_IP12'
                     },
-                    #Iphone 12 Pro
+                 
                     {
                         'trigger': 'advance',
                         'source': 'Apple',
@@ -178,8 +178,8 @@ class TocMachine(GraphMachine):
                     {
                         'trigger': 'advance',
                         'source': 'fsm',
-                        'dest': 'menu',
-                        'conditions': 'is_going_to_menu'
+                        'dest': 'Menu',
+                        'conditions': 'is_going_to_Menu'
                     },
                    
                 ],
@@ -192,10 +192,12 @@ class TocMachine(GraphMachine):
     def is_going_to_Menu(self, event):
         text = event.message.text
         return "Menu" in text
+    
     #Apple
     def is_going_to_Apple(self, event):
         text = event.message.text
         return "Apple" in text 
+    
     # Iphone 12
     def is_going_to_IP12(self, event):
         text = event.message.text
@@ -228,7 +230,7 @@ class TocMachine(GraphMachine):
     # Iphone 12 Pro
     def is_going_to_IP12_Pro(self, event):
         text = event.message.text
-        return "Iphone 12 Pro" in text 
+        return "IP12 Pro" in text 
     
     def is_going_to_IP12_Pro_Price(self, event):
         text = event.message.text
