@@ -2,7 +2,7 @@ from transitions.extensions import GraphMachine
 
 from utils import send_text_message
 
-from utils import send_text_message, send_IP12_carousel, send_fsm
+from utils import send_text_message, send_IP12_carousel, send_fsm, send_go_to_menu_button
 
 
 
@@ -33,7 +33,7 @@ class TocMachine(GraphMachine):
                         'trigger': 'advance',
                         'source': '*',
                         'dest': 'Menu',
-                        'conditions': 'is_going_to_Menu'
+                        'conditions': 'is_going_to_IP12'
                     },
                     {
                         'trigger': 'advance',
