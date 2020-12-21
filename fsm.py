@@ -224,6 +224,7 @@ class TocMachine(GraphMachine):
     def go_back_to_IP12(self, event):
         text = event.message.text
         return "Iphone 12" in text
+    
     # Iphone 12 Pro
     def is_going_to_IP12_Pro(self, event):
         text = event.message.text
@@ -244,6 +245,10 @@ class TocMachine(GraphMachine):
     def is_going_to_IP12_Pro_Benchmark_Score(self, event):
         text = event.message.text
         return "Iphone 12 Pro Benchmark Score" in text 
+
+    def go_back_to_IP12_Pro(self, event):
+        text = event.message.text
+        return "Iphone 12 Pro" in text
 
     #on enter
     def on_enter_Menu(self, event):
@@ -344,6 +349,13 @@ class TocMachine(GraphMachine):
         send_info(reply_token, word, information, current) 
     
     #Iphone 12 Pro
+    def on_enter_Back_IP12_Pro(self,event):
+        print("I'm entering Iphone 12 Pro")
+        reply_token = event.reply_token
+        #text = "Please choose which information you want to know!"
+        #send_text_message(reply_token, text)
+        send_IP12_Pro_carousel(reply_token)
+
     def on_enter_IP12_Pro(self, event):
         print("I'm entering Iphone 12 Pro")
         reply_token = event.reply_token
