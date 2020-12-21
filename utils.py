@@ -149,7 +149,7 @@ def send_info(reply_token, word, information, current):
                         "text": "Menu"
                         },
                         "height": "sm"
-                    }
+                    },
                     {
                         "type": "button",
                         "action": {
@@ -158,7 +158,7 @@ def send_info(reply_token, word, information, current):
                         "text": current
                         },
                         "height": "sm"
-                    }
+                    },
                     ]
                 },
                 "styles": {
