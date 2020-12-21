@@ -90,10 +90,66 @@ def send_IP12_carousel(reply_token):
 
     return "OK"
 
+def send_IP12_Pro_carousel(reply_token):
+    carousel_template = TemplateSendMessage(
+        alt_text="Options",
+        template=CarouselTemplate(
+            columns=[
+                CarouselColumn(
+                    title="Price $$$",
+                    text="Let's see if you can afford it HAHAHA",
+                    thumbnail_image_url="https://everyaustraliancounts.com.au/wp-content/uploads/price-wood.jpg",
+                    actions=[
+                        MessageTemplateAction(
+                            label="Inquire",
+                            text="Iphone 12 Pro Price"
+                        ),
+                    ]
+                ),
+                CarouselColumn(
+                    title="Specs",
+                    text="Wanna see the specs of the device?",
+                    thumbnail_image_url="https://www.gsma.com/esim/wp-content/uploads/2012/10/Specifications.jpg",
+                    actions=[
+                        MessageTemplateAction(
+                            label="Inquire",
+                            text="Iphone 12 Pro Specs"
+                        ),
+                    ]
+                ),
+                CarouselColumn(
+                    title="Pros and Cons",
+                    text="Wanna know the pros and cons?。",
+                    thumbnail_image_url="https://ardas-it.com/uploads/images/blogs/Pros-And-Cons-blog.jpg",
+                    actions=[
+                        MessageTemplateAction(
+                            label="Inquire",
+                            text="Iphone 12 Pro Pros and Cons"
+                        ),
+                    ]
+                ),
+                CarouselColumn(
+                    title="Antutu Benchmark",
+                    text="Wanna see how powerful is your device?",
+                    thumbnail_image_url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkTpTs5D_l_o2c9OAvFTC7ZW4VEowytaFm0Q&usqp=CAU",
+                    actions=[
+                        MessageTemplateAction(
+                            label="Inquire",
+                            text="Iphone 12 Pro Benchmark Score"
+                        ),
+                    ]
+                ),
+            ]
+        )
+    )
+    line_bot_api.reply_message(reply_token, carousel_template)
+
+    return "OK"
+
 def send_info(reply_token, word, information, current):
     line_bot_api.reply_message(reply_token, 
         FlexSendMessage(
-            "找...找不到",
+            "Information",
             {
                 "type": "bubble",
                 "body": {
@@ -238,35 +294,35 @@ def send_Apple_carousel(reply_token):
                     ]
                 ),
                 CarouselColumn(
-                    title="Iphone 12 pro",
-                    text="Wanna own an Iphone 12 pro?",
+                    title="Iphone 12 Pro",
+                    text="Wanna own an Iphone 12 Pro?",
                     thumbnail_image_url="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-12-pro--.jpg",
                     actions=[
                         MessageTemplateAction(
                             label="Inquire",
-                            text="Iphone 12 pro"
+                            text="Iphone 12 Pro"
                         ),
                     ]
                 ),
                 CarouselColumn(
-                    title="Iphone 12 mini",
-                    text="Wanna own an Iphone 12 mini?",
+                    title="Iphone 12 Mini",
+                    text="Wanna own an Iphone 12 Mini?",
                     thumbnail_image_url="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-12-mini.jpg",
                     actions=[
                         MessageTemplateAction(
                             label="Inquire",
-                            text="Iphone 12 mini"
+                            text="Iphone 12 Mini"
                         ),
                     ]
                 ),
                 CarouselColumn(
-                    title="Iphone 12 pro max",
-                    text="Wanna own an Iphone 12 pro max?",
+                    title="Iphone 12 Pro Max",
+                    text="Wanna own an Iphone 12 Pro Max?",
                     thumbnail_image_url="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-12-pro-max-.jpg",
                     actions=[
                         MessageTemplateAction(
                             label="Inquire",
-                            text="Iphone 12 pro max"
+                            text="Iphone 12 Pro Max"
                         ),
                     ]
                 ),
