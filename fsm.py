@@ -104,7 +104,7 @@ class TocMachine(GraphMachine):
                         'dest': 'IP12_Specs',
                         'conditions': 'is_going_to_IP12_Specs'
                     },
-                    {
+                    
                     {
                         'trigger': 'advance',
                         'source': 'IP12_Specs',
