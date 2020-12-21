@@ -89,7 +89,7 @@ class TocMachine(GraphMachine):
                         'trigger': 'advance',
                         'source': 'IP12_Price',
                         'dest': 'IP12',
-                        'conditions': 'go_back_to_IP12'
+                        'conditions': 'is_going_to_IP12'
                     },
                     {
                         'trigger': 'advance',
@@ -113,7 +113,7 @@ class TocMachine(GraphMachine):
                         'trigger': 'advance',
                         'source': 'IP12_Specs',
                         'dest': 'IP12',
-                        'conditions': 'go_back_to_IP12'
+                        'conditions': 'is_going_to_IP12'
                     },
                     {
                         'trigger': 'advance',
@@ -137,7 +137,7 @@ class TocMachine(GraphMachine):
                         'trigger': 'advance',
                         'source': 'IP12_Pros_Cons',
                         'dest': 'IP12',
-                        'conditions': 'go_back_to_IP12'
+                        'conditions': 'is_going_to_IP12'
                     },
                     {
                         'trigger': 'advance',
@@ -161,7 +161,7 @@ class TocMachine(GraphMachine):
                         'trigger': 'advance',
                         'source': 'IP12_Benchmark_Score',
                         'dest': 'IP12',
-                        'conditions': 'go_back_to_IP12'
+                        'conditions': 'is_going_to_IP12'
                     },
                     {
                         'trigger': 'advance',
@@ -206,7 +206,7 @@ class TocMachine(GraphMachine):
                         'trigger': 'advance',
                         'source': 'IP12_Pro_Price',
                         'dest': 'IP12_Pro',
-                        'conditions': 'go_back_to_IP12_Pro'
+                        'conditions': 'is_going_to_IP12_Pro'
                     },
                     {
                         'trigger': 'advance',
@@ -230,7 +230,7 @@ class TocMachine(GraphMachine):
                         'trigger': 'advance',
                         'source': 'IP12_Pro_Specs',
                         'dest': 'IP12_Pro',
-                        'conditions': 'go_back_to_IP12_Pro'
+                        'conditions': 'is_going_to_IP12_Pro'
                     },
                     {
                         'trigger': 'advance',
@@ -254,7 +254,7 @@ class TocMachine(GraphMachine):
                         'trigger': 'advance',
                         'source': 'IP12_Pro_Pros_Cons',
                         'dest': 'IP12_Pro',
-                        'conditions': 'go_back_to_IP12_Pro'
+                        'conditions': 'is_going_to_IP12_Pro'
                     },
                     {
                         'trigger': 'advance',
@@ -278,7 +278,7 @@ class TocMachine(GraphMachine):
                         'trigger': 'advance',
                         'source': 'IP12_Pro_Benchmark_Score',
                         'dest': 'IP12_Pro',
-                        'conditions': 'go_back_to_IP12_Pro'
+                        'conditions': 'is_going_to_IP12_Pro'
                     },
                     {
                         'trigger': 'advance',
@@ -317,7 +317,7 @@ class TocMachine(GraphMachine):
                         'trigger': 'advance',
                         'source': 'IP12_Mini_Price',
                         'dest': 'IP12_Mini',
-                        'conditions': 'go_back_to_IP12_Mini'
+                        'conditions': 'is_going_to_IP12_Mini'
                     },
                     {
                         'trigger': 'advance',
@@ -341,7 +341,7 @@ class TocMachine(GraphMachine):
                         'trigger': 'advance',
                         'source': 'IP12_Mini_Specs',
                         'dest': 'IP12_Mini',
-                        'conditions': 'go_back_to_IP12_Mini'
+                        'conditions': 'is_going_to_IP12_Mini'
                     },
                     {
                         'trigger': 'advance',
@@ -365,7 +365,7 @@ class TocMachine(GraphMachine):
                         'trigger': 'advance',
                         'source': 'IP12_Mini_Pros_Cons',
                         'dest': 'IP12_Mini',
-                        'conditions': 'go_back_to_IP12_Mini'
+                        'conditions': 'is_going_to_IP12_Mini'
                     },
                     {
                         'trigger': 'advance',
@@ -389,7 +389,7 @@ class TocMachine(GraphMachine):
                         'trigger': 'advance',
                         'source': 'IP12_Mini_Benchmark_Score',
                         'dest': 'IP12_Mini',
-                        'conditions': 'go_back_to_IP12_Mini'
+                        'conditions': 'is_going_to_IP12_Mini'
                     },
                     {
                         'trigger': 'advance',
@@ -399,7 +399,7 @@ class TocMachine(GraphMachine):
                     },
                     {
                         'trigger': 'advance',
-                        'source': 'IP12_Mini__Benchmark_Score',
+                        'source': 'IP12_Mini_Benchmark_Score',
                         'dest': 'Apple',
                         'conditions': 'is_going_to_Apple'
                     },
