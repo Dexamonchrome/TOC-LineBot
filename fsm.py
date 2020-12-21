@@ -2,7 +2,7 @@ from transitions.extensions import GraphMachine
 
 from utils import send_text_message
 
-from utils import send_text_message, send_IP12_carousel, send_fsm, send_go_to_menu_button
+from utils import send_text_message, send_IP12_carousel, send_fsm, send_go_to_menu_button,send_Apple_carousel, send_Menu_carousel
 
 
 
@@ -32,8 +32,32 @@ class TocMachine(GraphMachine):
                     {
                         'trigger': 'advance',
                         'source': '*',
+                        'dest': 'Menu',
+                        'conditions': 'is_going_to_Menu'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'Menu',
+                        'dest': 'Apple',
+                        'conditions': 'is_going_to_Apple'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'Apple',
+                        'dest': 'Menu',
+                        'conditions': 'is_going_to_Menu'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'Apple',
                         'dest': 'IP12',
                         'conditions': 'is_going_to_IP12'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'IP12',
+                        'dest': 'Apple',
+                        'conditions': 'is_going_to_Apple'
                     },
                     {
                         'trigger': 'advance',
@@ -107,7 +131,7 @@ class TocMachine(GraphMachine):
 
     def is_going_to_IP12(self, event):
         text = event.message.text
-        return "Iphone 12 Menu" in text 
+        return "Iphone 12" in text 
     
     def is_going_to_IP12_Price(self, event):
         text = event.message.text
@@ -137,14 +161,15 @@ class TocMachine(GraphMachine):
         #text = ("Iphone 12 Menu")
         #send_text_message(reply_token, text)
         #send_go_to_menu_button(reply_token)
-        send_IP12_carousel(reply_token)
+        send_Menu_carousel(reply_token)
 
 
     def on_enter_Apple(self, event):
         print("I'm entering Apple")
         reply_token = event.reply_token
-        text = "Please choose an Apple smartphone that you want to know about!"
-        send_text_message(reply_token, text)
+        #text = "Please choose an Apple smartphone that you want to know about!"
+        #send_text_message(reply_token, text)
+        send_Apple_carousel(reply_token)
 
     def on_enter_IP12(self, event):
         print("I'm entering Iphone 12")
