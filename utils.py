@@ -114,4 +114,18 @@ def send_button_message(id, text, buttons):
                         'dest': 'IP12',
                         'conditions': 'is_going_to_IP12'
                     },
+
+                    {
+                        'trigger': 'advance',
+                        'source': '*',
+                        'dest': 'Menu',
+                        'conditions': 'is_going_to_Menu'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'Menu',
+                        'dest': 'IP12',
+                        'conditions': 'is_going_to_IP12'
+                    },
+                
 """
