@@ -140,10 +140,10 @@ class TocMachine(GraphMachine):
     def on_enter_Menu(self, event):
         print("I'm entering menu")
         reply_token = event.reply_token
-        text = ("Iphone 12 Menu")
-        send_text_message(reply_token, text)
+        #text = ("Iphone 12 Menu")
+        #send_text_message(reply_token, text)
         #send_go_to_menu_button(reply_token)
-        #send_IP12_carousel(reply_token)
+        send_IP12_carousel(reply_token)
 
 
     def on_enter_Apple(self, event):
