@@ -15,11 +15,11 @@ class TocMachine(GraphMachine):
                     'start',
                     'Menu',
                     'Apple',
-                    'IP12'
+                    'IP12',
                     'IP12_Price',
                     'IP12_Specs',
                     'IP12_Pros_Cons',
-                    'IP12_Benchmark_Score'
+                    'IP12_Benchmark_Score',
                     'fsm'
                 ],
                 "transitions" : [
