@@ -300,7 +300,7 @@ def send_Apple_carousel(reply_token):
                     actions=[
                         MessageTemplateAction(
                             label="Inquire",
-                            text="Iphone 12 Pro"
+                            text="IP12 Pro"
                         ),
                     ]
                 ),
