@@ -426,7 +426,7 @@ class TocMachine(GraphMachine):
         current = "Iphone 12 Pro"
         send_info(reply_token, word, information, current)
 
-    def on_enter_IP12_Benchmark_Score(self, event):
+    def on_enter_IP12_Pro_Benchmark_Score(self, event):
         print("I'm entering Iphone 12 Pro's Benchmark Score")
         reply_token = event.reply_token
         x = "The Antutu Benchmark score of Iphone 12 Pro is 599059."
