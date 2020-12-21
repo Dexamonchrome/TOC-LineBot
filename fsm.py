@@ -280,19 +280,19 @@ class TocMachine(GraphMachine):
     
     def is_going_to_IP12_Price(self, event):
         text = event.message.text
-        return "Iphone 12 Price" in text 
+        return "Iphone 12" and "Mini" not in text and "Pro" not in text and "Price" in text 
 
     def is_going_to_IP12_Specs(self, event):
         text = event.message.text
-        return "Iphone 12 Specs" in text 
+        return "Iphone 12" and "Mini" not in text and "Pro" not in text and "Specs" in text  
 
     def is_going_to_IP12_Pros_Cons(self, event):
         text = event.message.text
-        return "Iphone 12 Pros and Cons" in text 
+        return "Iphone 12" and "Mini" not in text and "Pro" not in text and "Pros and Cons" in text   
 
     def is_going_to_IP12_Benchmark_Score(self, event):
         text = event.message.text
-        return "Iphone 12 Benchmark Score" in text 
+        return "Iphone 12" and "Mini" not in text and "Pro" not in text and "Benchmark Score" in text  
 
     def is_going_to_fsm(self, event):
         text = event.message.text
@@ -551,7 +551,7 @@ class TocMachine(GraphMachine):
         current = "Iphone 12 Mini"
         send_info(reply_token, word, information, current)
 
-    def on_enter_IP12_Specs(self, event):
+    def on_enter_IP12_Mini_Specs(self, event):
         print("I'm entering Iphone 12 Mini's specs")
         reply_token = event.reply_token
         myTuple = (
@@ -573,7 +573,7 @@ class TocMachine(GraphMachine):
         current = "Iphone 12 Mini"
         send_info(reply_token, word, information, current)
 
-    def on_enter_IP12_Pros_Cons(self, event):
+    def on_enter_IP12_Mini_Pros_Cons(self, event):
         print("I'm entering Iphone 12 Mini's pros and cons")
         reply_token = event.reply_token
         myTuple = (
@@ -605,7 +605,7 @@ class TocMachine(GraphMachine):
         current = "Iphone 12 Mini"
         send_info(reply_token, word, information, current)
 
-    def on_enter_IP12_Benchmark_Score(self, event):
+    def on_enter_IP12__Mini_Benchmark_Score(self, event):
         print("I'm entering Iphone 12 Mini's Benchmark Score")
         reply_token = event.reply_token
         x = "The Antutu Benchmark score of Iphone 12 Mini is 614169."
