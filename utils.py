@@ -22,11 +22,11 @@ def send_go_to_menu_button(reply_token):
             actions=[
                 MessageTemplateAction(
                     label="Go back to Menu",
-                    text="Iphone 12 Menu"
+                    text="Menu"
                 ),
                 MessageTemplateAction(
                     label="Do we have to?",
-                    text="Iphone 12 Menu"
+                    text="Menu"
                 ),
             ]
         )
@@ -80,6 +80,118 @@ def send_IP12_carousel(reply_token):
                         MessageTemplateAction(
                             label="Inquire",
                             text="Iphone 12 Benchmark Score"
+                        ),
+                    ]
+                ),
+            ]
+        )
+    )
+    line_bot_api.reply_message(reply_token, carousel_template)
+
+    return "OK"
+
+def send_Menu_carousel(reply_token):
+    carousel_template = TemplateSendMessage(
+        alt_text="Menu",
+        template=CarouselTemplate(
+            columns=[
+                CarouselColumn(
+                    title="Apple",
+                    text="Wanna own an Apple phone?",
+                    thumbnail_image_url="https://everyaustraliancounts.com.au/wp-content/uploads/price-wood.jpg",
+                    actions=[
+                        MessageTemplateAction(
+                            label="Inquire",
+                            text="Apple"
+                        ),
+                    ]
+                ),
+                CarouselColumn(
+                    title="Samsung",
+                    text="Wanna own a Samsung phone?",
+                    thumbnail_image_url="https://www.gsma.com/esim/wp-content/uploads/2012/10/Specifications.jpg",
+                    actions=[
+                        MessageTemplateAction(
+                            label="Inquire",
+                            text="Samsung"
+                        ),
+                    ]
+                ),
+                CarouselColumn(
+                    title="Google",
+                    text="Wanna own a Google phone?",
+                    thumbnail_image_url="https://ardas-it.com/uploads/images/blogs/Pros-And-Cons-blog.jpg",
+                    actions=[
+                        MessageTemplateAction(
+                            label="Inquire",
+                            text="Google"
+                        ),
+                    ]
+                ),
+                CarouselColumn(
+                    title="Huawei",
+                    text="Wanna own a Huawei phone?",
+                    thumbnail_image_url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkTpTs5D_l_o2c9OAvFTC7ZW4VEowytaFm0Q&usqp=CAU",
+                    actions=[
+                        MessageTemplateAction(
+                            label="Inquire",
+                            text="Huawei"
+                        ),
+                    ]
+                ),
+            ]
+        )
+    )
+    line_bot_api.reply_message(reply_token, carousel_template)
+
+    return "OK"
+
+def send_Apple_carousel(reply_token):
+    carousel_template = TemplateSendMessage(
+        alt_text="Apple Menu",
+        template=CarouselTemplate(
+            columns=[
+                CarouselColumn(
+                    title="Iphone 12",
+                    text="Wanna own an Iphone 12?",
+                    thumbnail_image_url="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-12.jpg",
+                    actions=[
+                        MessageTemplateAction(
+                            label="Inquire",
+                            text="Iphone 12"
+                        ),
+                    ]
+                ),
+                CarouselColumn(
+                    title="Iphone 12 pro",
+                    text="Wanna own an Iphone 12 pro?",
+                    thumbnail_image_url="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-12-pro--.jpg",
+                    actions=[
+                        MessageTemplateAction(
+                            label="Inquire",
+                            text="Iphone 12 pro"
+                        ),
+                    ]
+                ),
+                CarouselColumn(
+                    title="Iphone 12 mini",
+                    text="Wanna own an Iphone 12 mini?",
+                    thumbnail_image_url="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-12-mini.jpg",
+                    actions=[
+                        MessageTemplateAction(
+                            label="Inquire",
+                            text="Iphone 12 mini"
+                        ),
+                    ]
+                ),
+                CarouselColumn(
+                    title="Iphone 12 pro max",
+                    text="Wanna own an Iphone 12 pro max?",
+                    thumbnail_image_url="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-12-pro-max-.jpg",
+                    actions=[
+                        MessageTemplateAction(
+                            label="Inquire",
+                            text="Iphone 12 pro max"
                         ),
                     ]
                 ),
