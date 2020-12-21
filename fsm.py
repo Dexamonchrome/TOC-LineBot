@@ -2,7 +2,7 @@ from transitions.extensions import GraphMachine
 
 from utils import send_text_message
 
-from utils import send_text_message, send_IP12_carousel, send_fsm, send_go_to_menu_button,send_Apple_carousel, send_Menu_carousel
+from utils import send_text_message, send_IP12_carousel, send_fsm, send_go_to_menu_button,send_Apple_carousel, send_Menu_carousel, send_info
 
 
 
@@ -15,6 +15,11 @@ class TocMachine(GraphMachine):
                     'start',
                     'Menu',
                     'Apple',
+                    'IP12_Pro',
+                    'IP12_Pro_Price',
+                    'IP12_Pro_Specs',
+                    'IP12_Pro_Pros_Cons',
+                    'IP12_Pro_Benchmark_Score',
                     'IP12',
                     'IP12_Price',
                     'IP12_Specs',
@@ -47,6 +52,7 @@ class TocMachine(GraphMachine):
                         'dest': 'Menu',
                         'conditions': 'is_going_to_Menu'
                     },
+                    #Iphone 12
                     {
                         'trigger': 'advance',
                         'source': 'Apple',
@@ -107,6 +113,68 @@ class TocMachine(GraphMachine):
                         'dest': 'IP12',
                         'conditions': 'go_back_to_IP12'
                     },
+                    #Iphone 12 Pro
+                    {
+                        'trigger': 'advance',
+                        'source': 'Apple',
+                        'dest': 'IP12_Pro',
+                        'conditions': 'is_going_to_IP12_Pro'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'IP12_Pro',
+                        'dest': 'Apple',
+                        'conditions': 'is_going_to_Apple'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'IP12_Pro',
+                        'dest': 'IP12_Pro_Price',
+                        'conditions': 'is_going_to_IP12_Pro_Price'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'IP12_Pro_Price',
+                        'dest': 'IP12_Pro',
+                        'conditions': 'go_back_to_IP12_Pro'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'IP12_Pro',
+                        'dest': 'IP12_Pro_Specs',
+                        'conditions': 'is_going_to_IP12_Pro_Specs'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'IP12_Pro_Specs',
+                        'dest': 'IP12_Pro',
+                        'conditions': 'go_back_to_IP12_Pro'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'IP12_Pro',
+                        'dest': 'IP12_Pro_Pros_Cons',
+                        'conditions': 'is_going_to_IP12_Pro_Pros_Cons'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'IP12_Pro_Pros_Cons',
+                        'dest': 'IP12_Pro',
+                        'conditions': 'go_back_to_IP12_Pro'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'IP12_Pro',
+                        'dest': 'IP12_Pro_Benchmark_Score',
+                        'conditions': 'is_going_to_IP12_Pro_Benchmark_Score'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'IP12_Pro_Benchmark_Score',
+                        'dest': 'IP12_Pro',
+                        'conditions': 'go_back_to_IP12_Pro'
+                    },
+
                     {
                         'trigger': 'advance',
                         'source': 'fsm',
@@ -124,11 +192,11 @@ class TocMachine(GraphMachine):
     def is_going_to_Menu(self, event):
         text = event.message.text
         return "Menu" in text
-    
+    #Apple
     def is_going_to_Apple(self, event):
         text = event.message.text
         return "Apple" in text 
-
+    # Iphone 12
     def is_going_to_IP12(self, event):
         text = event.message.text
         return "Iphone 12" in text 
@@ -155,7 +223,27 @@ class TocMachine(GraphMachine):
 
     def go_back_to_IP12(self, event):
         text = event.message.text
-        return "Iphone 12" in text 
+        return "Iphone 12" in text
+    # Iphone 12 Pro
+    def is_going_to_IP12_Pro(self, event):
+        text = event.message.text
+        return "Iphone 12 Pro" in text 
+    
+    def is_going_to_IP12_Pro_Price(self, event):
+        text = event.message.text
+        return "Iphone 12 Pro Price" in text 
+
+    def is_going_to_IP12_Pro_Specs(self, event):
+        text = event.message.text
+        return "Iphone 12 Pro Specs" in text 
+
+    def is_going_to_IP12_Pro_Pros_Cons(self, event):
+        text = event.message.text
+        return "Iphone 12 Pro Pros and Cons" in text 
+
+    def is_going_to_IP12_Pro_Benchmark_Score(self, event):
+        text = event.message.text
+        return "Iphone 12 Pro Benchmark Score" in text 
 
     #on enter
     def on_enter_Menu(self, event):
@@ -165,21 +253,21 @@ class TocMachine(GraphMachine):
         #send_text_message(reply_token, text)
         #send_go_to_menu_button(reply_token)
         send_Menu_carousel(reply_token)
-
+    # back to Iphone 12
     def on_enter_Back_IP12(self,event):
         print("I'm entering Iphone 12")
         reply_token = event.reply_token
         #text = "Please choose which information you want to know!"
         #send_text_message(reply_token, text)
         send_IP12_carousel(reply_token)
-
+    #Apple
     def on_enter_Apple(self, event):
         print("I'm entering Apple")
         reply_token = event.reply_token
         #text = "Please choose an Apple smartphone that you want to know about!"
         #send_text_message(reply_token, text)
         send_Apple_carousel(reply_token)
-
+    #Iphone 12
     def on_enter_IP12(self, event):
         print("I'm entering Iphone 12")
         reply_token = event.reply_token
@@ -190,8 +278,10 @@ class TocMachine(GraphMachine):
     def on_enter_IP12_Price(self, event):
         print("I'm entering Iphone 12's price")
         reply_token = event.reply_token
-        text = "The Price of Iphone 12 is $1,129.00"
-        send_text_message(reply_token, text)
+        word = "Price"
+        information = "The Price of Iphone 12 is $1129.00"
+        current = "Iphone 12"
+        send_info(reply_token, word, information, current)
 
     def on_enter_IP12_Specs(self, event):
         print("I'm entering Iphone 12's specs")
@@ -217,7 +307,7 @@ class TocMachine(GraphMachine):
         print("I'm entering Iphone 12's pros and cons")
         reply_token = event.reply_token
         myTuple = (
-        "Pros",
+        "Pros:",
         "Attractive design with exquisite fit and premium finish",
         "Excellent OLED screen, very bright",
         "Loud stereo speakers, superb audio quality",
@@ -226,7 +316,13 @@ class TocMachine(GraphMachine):
         "LiDAR Scanner has varied applications and use cases (albeit quite niche)",
         "Consistently good video quality",
         "Apple iOS 14 is fast and easy to use, 5 years of guaranteed major updates",
-        "MagSafe is a promising accessory concept"
+        "MagSafe is a promising accessory concept",
+        "\nCons:",
+        "No charger or headphones in the box",
+        "No high refresh rate screen",
+        "Battery life is shorter than iPhone 11",
+        "iOS needs better file management",
+        "We miss TouchID as FaceID does not work with a mask on"
         )
 
         x = "\n\n".join(myTuple)
@@ -235,7 +331,7 @@ class TocMachine(GraphMachine):
         send_text_message(reply_token, text)
 
     def on_enter_IP12_Benchmark_Score(self, event):
-        print("I'm entering Iphone 12's price")
+        print("I'm entering Iphone 12's Benchmark Score")
         reply_token = event.reply_token
         text = "The Antutu Benchmark score of Iphone 12 is 598,478."
         send_text_message(reply_token, text) 

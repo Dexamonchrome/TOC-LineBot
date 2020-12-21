@@ -90,6 +90,87 @@ def send_IP12_carousel(reply_token):
 
     return "OK"
 
+def send_info(reply_token, word, information, current):
+    line_bot_api.reply_message(reply_token, 
+        FlexSendMessage(
+            "找...找不到",
+            {
+                "type": "bubble",
+                "body": {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                    {
+                        "type": "text",
+                        "text": word,
+                        "weight": "bold",
+                        "size": "xxl",
+                        "margin": "md"
+                    },
+                    {
+                        "type": "separator",
+                        "margin": "xl"
+                    },
+                    {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                        {
+                            "type": "text",
+                            "text": "增加找到的機率？！",
+                            "size": "sm",
+                            "weight": "bold"
+                        },
+                        {
+                            "type": "text",
+                            "text": information,
+                            "wrap": True,
+                        },
+                        ],
+                        "spacing": "sm",
+                        "margin": "xxl"
+                    },
+                    {
+                        "type": "separator",
+                        "margin": "xxl"
+                    },
+                    {
+                        "type": "text",
+                        "text": "Where do you want to go?",
+                        "size": "sm",
+                        "wrap": True,
+                        "margin": "xxl"
+                    },
+                    {
+                        "type": "button",
+                        "action": {
+                        "type": "message",
+                        "label": "Menu",
+                        "text": "Menu"
+                        },
+                        "height": "sm"
+                    }
+                    {
+                        "type": "button",
+                        "action": {
+                        "type": "message",
+                        "label": current,
+                        "text": current
+                        },
+                        "height": "sm"
+                    }
+                    ]
+                },
+                "styles": {
+                    "footer": {
+                    "separator": True
+                    }
+                }
+            }
+        )
+    )
+    return "OK"
+
 def send_Menu_carousel(reply_token):
     carousel_template = TemplateSendMessage(
         alt_text="Menu",
