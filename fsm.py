@@ -49,6 +49,12 @@ class TocMachine(GraphMachine):
                     },
                     {
                         'trigger': 'advance',
+                        'source': 'IP12_Price',
+                        'dest': 'IP12',
+                        'conditions': 'is_going_to_IP12'
+                    },
+                    {
+                        'trigger': 'advance',
                         'source': 'IP12',
                         'dest': 'IP12_Specs',
                         'conditions': 'is_going_to_IP12_Specs'
@@ -67,9 +73,21 @@ class TocMachine(GraphMachine):
                     },
                     {
                         'trigger': 'advance',
+                        'source': 'IP12_Pros_Cons',
+                        'dest': 'IP12',
+                        'conditions': 'is_going_to_IP12'
+                    },
+                    {
+                        'trigger': 'advance',
                         'source': 'IP12',
                         'dest': 'IP12_Benchmark_Score',
                         'conditions': 'is_going_to_IP12_Benchmark_Score'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'IP12_Benchmark_Score',
+                        'dest': 'IP12',
+                        'conditions': 'is_going_to_IP12'
                     },
                     {
                         'trigger': 'advance',
@@ -95,7 +113,7 @@ class TocMachine(GraphMachine):
 
     def is_going_to_IP12(self, event):
         text = event.message.text
-        return "Iphone 12" in text 
+        return "Iphone 12 Menu" in text 
     
     def is_going_to_IP12_Price(self, event):
         text = event.message.text
@@ -122,7 +140,9 @@ class TocMachine(GraphMachine):
     def on_enter_Menu(self, event):
         print("I'm entering menu")
         reply_token = event.reply_token
-        send_text_message(reply_token, text)
+        #send_text_message(reply_token, text)
+        send_go_to_menu_button(reply_token)
+
 
     def on_enter_Apple(self, event):
         print("I'm entering Apple")
