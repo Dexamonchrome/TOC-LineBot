@@ -346,7 +346,7 @@ class TocMachine(GraphMachine):
 
     def is_going_to_IP12_Mini_Benchmark_Score(self, event):
         text = event.message.text
-        return "Iphone 12 Mini" in text and "Benchmark Score" in text 
+        return "Iphone 12 Mini" in text or "Benchmark Score" in text 
 
     def go_back_to_IP12_Mini(self, event):
         text = event.message.text
