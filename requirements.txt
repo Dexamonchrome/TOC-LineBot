@@ -8,6 +8,7 @@ filelock==3.0.12
 Flask==1.1.2
 future==0.18.2
 graphviz==0.15
+gunicorn==20.0.4
 html5lib==1.1
 idna==2.10
 itsdangerous==1.1.0
