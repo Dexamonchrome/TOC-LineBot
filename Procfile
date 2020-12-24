@@ -1,2 +1,2 @@
 web: python app.py
-web: gunicorn app:app 
+web: pip install beautifulsoup4 --user
