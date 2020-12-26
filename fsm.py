@@ -14,6 +14,7 @@ class TocMachine(GraphMachine):
                 "states" : [
                     'start',
                     'Menu',
+                    'fsm_image'
                     'Apple',
                     'IP12_Mini',
                     'IP12_Mini_Price',
@@ -109,6 +110,19 @@ class TocMachine(GraphMachine):
                         'dest': 'Menu',
                         'conditions': 'is_going_to_Menu'
                     },
+                    {
+                        'trigger': 'advance',
+                        'source': 'Menu',
+                        'dest': 'fsm_image',
+                        'conditions': 'is_going_to_fsm_image'   
+                    }
+
+                    {
+                        'trigger': 'advance',
+                        'source': 'fsm_image',
+                        'dest': 'Menu',
+                        'conditions': 'is_going_to_Menu'   
+                    }
 
                     #Apple
 
@@ -2147,6 +2161,14 @@ class TocMachine(GraphMachine):
     def go_back_Menu(self,event):
         text = event.message.text
         return "Menu" in Text or "menu" in text
+    
+    def is_going_to_fsm_image(self, event): 
+        text = event.message.text
+        return "FSM" in text
+
+    def on_enter_fsm_image(self,event):
+        reply_token = event.reply_token
+        send_image_url(reply_token,"https://github.com/Dexamonchrome/TOC-LineBot/blob/main/img/fsm.png")
 
     #Apple
     def is_going_to_Apple(self, event):

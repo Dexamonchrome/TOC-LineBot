@@ -587,10 +587,32 @@ def send_Menu_carousel(reply_token):
                         ),
                     ]
                 ),
+                CarouselColumn(
+                    title="FSM",
+                    text="Wanna see the FSM?",
+                    thumbnail_image_url="https://github.com/Dexamonchrome/TOC-LineBot/blob/main/img/fsm.png",
+                    actions=[
+                        MessageTemplateAction(
+                            label="Inquire",
+                            text="FSM"
+                        ),
+                    ]
+                ),
             ]
         )
     )
     line_bot_api.reply_message(reply_token, carousel_template)
+
+    return "OK"
+
+#send image
+def send_image_url(id, img_url):
+    line_bot_api = LineBotApi(channel_access_token)
+    message = ImageSendMessage(
+        original_content_url=img_url,
+        preview_image_url=img_url
+        )
+    line_bot_api.reply_message(id, message)
 
     return "OK"
 
