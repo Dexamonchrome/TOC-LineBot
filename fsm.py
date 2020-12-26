@@ -2681,6 +2681,11 @@ class TocMachine(GraphMachine):
         text = event.message.text
         return "Xperia 10 II" == text
 
+    #Zenfone
+    def is_going_to_Zenfone(self, event): 
+        text = event.message.text
+        return "Zenfone" in text and "7" not in text
+
     #Zenfone 7
     def is_going_to_Zenfone_7(self, event):
         text = event.message.text
