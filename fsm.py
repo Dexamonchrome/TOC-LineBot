@@ -1950,6 +1950,192 @@ class TocMachine(GraphMachine):
                         'dest': 'Zenfone_7_Pro',
                         'conditions': 'is_going_to_Zenfone_7_Pro'
                     },
+
+                    #ROG Phone 3
+
+                    {
+                        'trigger': 'advance',
+                        'source': 'ROG',
+                        'dest': 'ROG_Phone_3',
+                        'conditions': 'is_going_to_ROG_Phone_3'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'ROG_Phone_3',
+                        'dest': 'ROG',
+                        'conditions': 'is_going_to_ROG'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'ROG_Phone_3',
+                        'dest': 'Asus',
+                        'conditions': 'is_going_to_Asus'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'ROG_Phone_3',
+                        'dest': 'Menu',
+                        'conditions': 'is_going_to_Menu'
+                    },
+                    
+                    {
+                        'trigger': 'advance',
+                        'source': 'ROG_Phone_3',
+                        'dest': 'ROG_Phone_3_Price',
+                        'conditions': 'is_going_to_ROG_Phone_3_Price'
+                    },
+                    
+                    {
+                        'trigger': 'advance',
+                        'source': 'ROG_Phone_3_Price',
+                        'dest': 'ROG_Phone_3',
+                        'conditions': 'is_going_to_ROG_Phone_3'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'ROG_Phone_3_Price',
+                        'dest': 'Menu',
+                        'conditions': 'is_going_to_Menu'
+                    },
+                     {
+                        'trigger': 'advance',
+                        'source': 'ROG_Phone_3_Price',
+                        'dest': 'Asus',
+                        'conditions': 'is_going_to_Asus'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'ROG_Phone_3_Price',
+                        'dest': 'ROG',
+                        'conditions': 'is_going_to_ROG'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'ROG_Phone_3',
+                        'dest': 'ROG_Phone_3_Specs',
+                        'conditions': 'is_going_to_ROG_Phone_3_Specs'
+                    },
+                    
+                    {
+                        'trigger': 'advance',
+                        'source': 'ROG_Phone_3_Specs',
+                        'dest': 'ROG_Phone_3',
+                        'conditions': 'is_going_to_ROG_Phone_3'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'ROG_Phone_3_Specs',
+                        'dest': 'Menu',
+                        'conditions': 'is_going_to_Menu'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'ROG_Phone_3_Specs',
+                        'dest': 'Asus',
+                        'conditions': 'is_going_to_Asus'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'ROG_Phone_3_Specs',
+                        'dest': 'ROG',
+                        'conditions': 'is_going_to_ROG'
+                    },
+                    
+                    {
+                        'trigger': 'advance',
+                        'source': 'ROG_Phone_3',
+                        'dest': 'ROG_Phone_3_Pros_Cons',
+                        'conditions': 'is_going_to_ROG_Phone_3_Pros_Cons'
+                    },
+                    
+                    {
+                        'trigger': 'advance',
+                        'source': 'ROG_Phone_3_Pros_Cons',
+                        'dest': 'ROG_Phone_3',
+                        'conditions': 'is_going_to_ROG_Phone_3'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'ROG_Phone_3_Pros_Cons',
+                        'dest': 'Menu',
+                        'conditions': 'is_going_to_Menu'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'ROG_Phone_3_Pros_Cons',
+                        'dest': 'Asus',
+                        'conditions': 'is_going_to_Asus'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'ROG_Phone_3_Pros_Cons',
+                        'dest': 'ROG',
+                        'conditions': 'is_going_to_ROG'
+                    },
+                    
+                    {
+                        'trigger': 'advance',
+                        'source': 'ROG_Phone_3',
+                        'dest': 'ROG_Phone_3_Benchmark_Score',
+                        'conditions': 'is_going_to_ROG_Phone_3_Benchmark_Score'
+                    },
+                    
+                    {
+                        'trigger': 'advance',
+                        'source': 'ROG_Phone_3_Benchmark_Score',
+                        'dest': 'ROG_Phone_3',
+                        'conditions': 'is_going_to_ROG_Phone_3'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'ROG_Phone_3_Benchmark_Score',
+                        'dest': 'Menu',
+                        'conditions': 'is_going_to_Menu'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'ROG_Phone_3_Benchmark_Score',
+                        'dest': 'Asus',
+                        'conditions': 'is_going_to_Asus'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'ROG_Phone_3_Benchmark_Score',
+                        'dest': 'ROG',
+                        'conditions': 'is_going_to_ROG'
+                    },
+
+                    {
+                        'trigger': 'advance',
+                        'source': 'ROG_Phone_3',
+                        'dest': 'ROG_Phone_3_Video',
+                        'conditions': 'is_going_to_ROG_Phone_3_Video'
+                    },
+                    
+                    {
+                        'trigger': 'advance',
+                        'source': 'ROG_Phone_3_Video',
+                        'dest': 'Menu',
+                        'conditions': 'is_going_to_Menu'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'ROG_Phone_3_Video',
+                        'dest': 'Asus',
+                        'conditions': 'is_going_to_Asus'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'ROG_Phone_3_Video',
+                        'dest': 'ROG',
+                        'conditions': 'is_going_to_ROG'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'ROG_Phone_3_Video',
+                        'dest': 'ROG_Phone_3',
+                        'conditions': 'is_going_to_ROG_Phone_3'
+                    },
                     
                     #ROG Phone 3 Strix
 
@@ -2139,191 +2325,7 @@ class TocMachine(GraphMachine):
                         'conditions': 'is_going_to_ROG_Phone_3_Strix'
                     },
 
-                    #ROG Phone 3
-
-                    {
-                        'trigger': 'advance',
-                        'source': 'ROG',
-                        'dest': 'ROG_Phone_3',
-                        'conditions': 'is_going_to_ROG_Phone_3'
-                    },
-                    {
-                        'trigger': 'advance',
-                        'source': 'ROG_Phone_3',
-                        'dest': 'ROG',
-                        'conditions': 'is_going_to_ROG'
-                    },
-                    {
-                        'trigger': 'advance',
-                        'source': 'ROG_Phone_3',
-                        'dest': 'Asus',
-                        'conditions': 'is_going_to_Asus'
-                    },
-                    {
-                        'trigger': 'advance',
-                        'source': 'ROG_Phone_3',
-                        'dest': 'Menu',
-                        'conditions': 'is_going_to_Menu'
-                    },
                     
-                    {
-                        'trigger': 'advance',
-                        'source': 'ROG_Phone_3',
-                        'dest': 'ROG_Phone_3_Price',
-                        'conditions': 'is_going_to_ROG_Phone_3_Price'
-                    },
-                    
-                    {
-                        'trigger': 'advance',
-                        'source': 'ROG_Phone_3_Price',
-                        'dest': 'ROG_Phone_3',
-                        'conditions': 'is_going_to_ROG_Phone_3'
-                    },
-                    {
-                        'trigger': 'advance',
-                        'source': 'ROG_Phone_3_Price',
-                        'dest': 'Menu',
-                        'conditions': 'is_going_to_Menu'
-                    },
-                     {
-                        'trigger': 'advance',
-                        'source': 'ROG_Phone_3_Price',
-                        'dest': 'Asus',
-                        'conditions': 'is_going_to_Asus'
-                    },
-                    {
-                        'trigger': 'advance',
-                        'source': 'ROG_Phone_3_Price',
-                        'dest': 'ROG',
-                        'conditions': 'is_going_to_ROG'
-                    },
-                    {
-                        'trigger': 'advance',
-                        'source': 'ROG_Phone_3',
-                        'dest': 'ROG_Phone_3_Specs',
-                        'conditions': 'is_going_to_ROG_Phone_3_Specs'
-                    },
-                    
-                    {
-                        'trigger': 'advance',
-                        'source': 'ROG_Phone_3_Specs',
-                        'dest': 'ROG_Phone_3',
-                        'conditions': 'is_going_to_ROG_Phone_3'
-                    },
-                    {
-                        'trigger': 'advance',
-                        'source': 'ROG_Phone_3_Specs',
-                        'dest': 'Menu',
-                        'conditions': 'is_going_to_Menu'
-                    },
-                    {
-                        'trigger': 'advance',
-                        'source': 'ROG_Phone_3_Specs',
-                        'dest': 'Asus',
-                        'conditions': 'is_going_to_Asus'
-                    },
-                    {
-                        'trigger': 'advance',
-                        'source': 'ROG_Phone_3_Specs',
-                        'dest': 'ROG',
-                        'conditions': 'is_going_to_ROG'
-                    },
-                    
-                    {
-                        'trigger': 'advance',
-                        'source': 'ROG_Phone_3',
-                        'dest': 'ROG_Phone_3_Pros_Cons',
-                        'conditions': 'is_going_to_ROG_Phone_3_Pros_Cons'
-                    },
-                    
-                    {
-                        'trigger': 'advance',
-                        'source': 'ROG_Phone_3_Pros_Cons',
-                        'dest': 'ROG_Phone_3',
-                        'conditions': 'is_going_to_ROG_Phone_3'
-                    },
-                    {
-                        'trigger': 'advance',
-                        'source': 'ROG_Phone_3_Pros_Cons',
-                        'dest': 'Menu',
-                        'conditions': 'is_going_to_Menu'
-                    },
-                    {
-                        'trigger': 'advance',
-                        'source': 'ROG_Phone_3_Pros_Cons',
-                        'dest': 'Asus',
-                        'conditions': 'is_going_to_Asus'
-                    },
-                    {
-                        'trigger': 'advance',
-                        'source': 'ROG_Phone_3_Pros_Cons',
-                        'dest': 'ROG',
-                        'conditions': 'is_going_to_ROG'
-                    },
-                    
-                    {
-                        'trigger': 'advance',
-                        'source': 'ROG_Phone_3',
-                        'dest': 'ROG_Phone_3_Benchmark_Score',
-                        'conditions': 'is_going_to_ROG_Phone_3_Benchmark_Score'
-                    },
-                    
-                    {
-                        'trigger': 'advance',
-                        'source': 'ROG_Phone_3_Benchmark_Score',
-                        'dest': 'ROG_Phone_3',
-                        'conditions': 'is_going_to_ROG_Phone_3'
-                    },
-                    {
-                        'trigger': 'advance',
-                        'source': 'ROG_Phone_3_Benchmark_Score',
-                        'dest': 'Menu',
-                        'conditions': 'is_going_to_Menu'
-                    },
-                    {
-                        'trigger': 'advance',
-                        'source': 'ROG_Phone_3_Benchmark_Score',
-                        'dest': 'Asus',
-                        'conditions': 'is_going_to_Asus'
-                    },
-                    {
-                        'trigger': 'advance',
-                        'source': 'ROG_Phone_3_Benchmark_Score',
-                        'dest': 'ROG',
-                        'conditions': 'is_going_to_ROG'
-                    },
-
-                    {
-                        'trigger': 'advance',
-                        'source': 'ROG_Phone_3',
-                        'dest': 'ROG_Phone_3_Video',
-                        'conditions': 'is_going_to_ROG_Phone_3_Video'
-                    },
-                    
-                    {
-                        'trigger': 'advance',
-                        'source': 'ROG_Phone_3_Video',
-                        'dest': 'Menu',
-                        'conditions': 'is_going_to_Menu'
-                    },
-                    {
-                        'trigger': 'advance',
-                        'source': 'ROG_Phone_3_Video',
-                        'dest': 'Asus',
-                        'conditions': 'is_going_to_Asus'
-                    },
-                    {
-                        'trigger': 'advance',
-                        'source': 'ROG_Phone_3_Video',
-                        'dest': 'ROG',
-                        'conditions': 'is_going_to_ROG'
-                    },
-                    {
-                        'trigger': 'advance',
-                        'source': 'ROG_Phone_3_Video',
-                        'dest': 'ROG_Phone_3',
-                        'conditions': 'is_going_to_ROG_Phone_3'
-                    },
                     
 
                 ],
