@@ -1537,26 +1537,6 @@ class TocMachine(GraphMachine):
                         'conditions': 'is_going_to_Xperia_10_II'
                     },
 
-                    #ROG
-                    {
-                        'trigger': 'advance',
-                        'source': 'Asus',
-                        'dest': 'ROG',
-                        'conditions': 'is_going_to_ROG'
-                    },
-                    {
-                        'trigger': 'advance',
-                        'source': 'ROG',
-                        'dest': 'Menu',
-                        'conditions': 'is_going_to_Menu'
-                    },
-                    {
-                        'trigger': 'advance',
-                        'source': 'ROG',
-                        'dest': 'Asus',
-                        'conditions': 'is_going_to_Asus'
-                    },
-
                     #Zenfone
                     {
                         'trigger': 'advance',
@@ -1577,8 +1557,26 @@ class TocMachine(GraphMachine):
                         'conditions': 'is_going_to_Asus'
                     },
 
+                    #ROG
+                    {
+                        'trigger': 'advance',
+                        'source': 'Asus',
+                        'dest': 'ROG',
+                        'conditions': 'is_going_to_ROG'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'ROG',
+                        'dest': 'Menu',
+                        'conditions': 'is_going_to_Menu'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'ROG',
+                        'dest': 'Asus',
+                        'conditions': 'is_going_to_Asus'
+                    },
                     
-
                     #Zenfone 7
 
                     {
