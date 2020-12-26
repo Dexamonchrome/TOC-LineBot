@@ -75,12 +75,6 @@ class TocMachine(GraphMachine):
                     'Xperia_10_II_Video',
                     'Asus',
                     'ROG',
-                    'ROG_Phone_3',
-                    'ROG_Phone_3_Price',
-                    'ROG_Phone_3_Specs',
-                    'ROG_Phone_3_Pros_Cons',
-                    'ROG_Phone_3_Benchmark_Score',
-                    'ROG_Phone_3_Video',
                     'ROG_Phone_3_Strix',
                     'ROG_Phone_3_Strix_Price',
                     'ROG_Phone_3_Strix_Specs',
@@ -1949,191 +1943,6 @@ class TocMachine(GraphMachine):
                         'conditions': 'is_going_to_Zenfone_7_Pro'
                     },
 
-                    #ROG Phone 3
-
-                    {
-                        'trigger': 'advance',
-                        'source': 'ROG',
-                        'dest': 'ROG_Phone_3',
-                        'conditions': 'is_going_to_ROG_Phone_3'
-                    },
-                    {
-                        'trigger': 'advance',
-                        'source': 'ROG_Phone_3',
-                        'dest': 'ROG',
-                        'conditions': 'is_going_to_ROG'
-                    },
-                    {
-                        'trigger': 'advance',
-                        'source': 'ROG_Phone_3',
-                        'dest': 'Asus',
-                        'conditions': 'is_going_to_Asus'
-                    },
-                    {
-                        'trigger': 'advance',
-                        'source': 'ROG_Phone_3',
-                        'dest': 'Menu',
-                        'conditions': 'is_going_to_Menu'
-                    },
-                    
-                    {
-                        'trigger': 'advance',
-                        'source': 'ROG_Phone_3',
-                        'dest': 'ROG_Phone_3_Price',
-                        'conditions': 'is_going_to_ROG_Phone_3_Price'
-                    },
-                    
-                    {
-                        'trigger': 'advance',
-                        'source': 'ROG_Phone_3_Price',
-                        'dest': 'ROG_Phone_3',
-                        'conditions': 'is_going_to_ROG_Phone_3'
-                    },
-                    {
-                        'trigger': 'advance',
-                        'source': 'ROG_Phone_3_Price',
-                        'dest': 'Menu',
-                        'conditions': 'is_going_to_Menu'
-                    },
-                     {
-                        'trigger': 'advance',
-                        'source': 'ROG_Phone_3_Price',
-                        'dest': 'Asus',
-                        'conditions': 'is_going_to_Asus'
-                    },
-                    {
-                        'trigger': 'advance',
-                        'source': 'ROG_Phone_3_Price',
-                        'dest': 'ROG',
-                        'conditions': 'is_going_to_ROG'
-                    },
-                    {
-                        'trigger': 'advance',
-                        'source': 'ROG_Phone_3',
-                        'dest': 'ROG_Phone_3_Specs',
-                        'conditions': 'is_going_to_ROG_Phone_3_Specs'
-                    },
-                    
-                    {
-                        'trigger': 'advance',
-                        'source': 'ROG_Phone_3_Specs',
-                        'dest': 'ROG_Phone_3',
-                        'conditions': 'is_going_to_ROG_Phone_3'
-                    },
-                    {
-                        'trigger': 'advance',
-                        'source': 'ROG_Phone_3_Specs',
-                        'dest': 'Menu',
-                        'conditions': 'is_going_to_Menu'
-                    },
-                    {
-                        'trigger': 'advance',
-                        'source': 'ROG_Phone_3_Specs',
-                        'dest': 'Asus',
-                        'conditions': 'is_going_to_Asus'
-                    },
-                    {
-                        'trigger': 'advance',
-                        'source': 'ROG_Phone_3_Specs',
-                        'dest': 'ROG',
-                        'conditions': 'is_going_to_ROG'
-                    },
-                    
-                    {
-                        'trigger': 'advance',
-                        'source': 'ROG_Phone_3',
-                        'dest': 'ROG_Phone_3_Pros_Cons',
-                        'conditions': 'is_going_to_ROG_Phone_3_Pros_Cons'
-                    },
-                    
-                    {
-                        'trigger': 'advance',
-                        'source': 'ROG_Phone_3_Pros_Cons',
-                        'dest': 'ROG_Phone_3',
-                        'conditions': 'is_going_to_ROG_Phone_3'
-                    },
-                    {
-                        'trigger': 'advance',
-                        'source': 'ROG_Phone_3_Pros_Cons',
-                        'dest': 'Menu',
-                        'conditions': 'is_going_to_Menu'
-                    },
-                    {
-                        'trigger': 'advance',
-                        'source': 'ROG_Phone_3_Pros_Cons',
-                        'dest': 'Asus',
-                        'conditions': 'is_going_to_Asus'
-                    },
-                    {
-                        'trigger': 'advance',
-                        'source': 'ROG_Phone_3_Pros_Cons',
-                        'dest': 'ROG',
-                        'conditions': 'is_going_to_ROG'
-                    },
-                    
-                    {
-                        'trigger': 'advance',
-                        'source': 'ROG_Phone_3',
-                        'dest': 'ROG_Phone_3_Benchmark_Score',
-                        'conditions': 'is_going_to_ROG_Phone_3_Benchmark_Score'
-                    },
-                    
-                    {
-                        'trigger': 'advance',
-                        'source': 'ROG_Phone_3_Benchmark_Score',
-                        'dest': 'ROG_Phone_3',
-                        'conditions': 'is_going_to_ROG_Phone_3'
-                    },
-                    {
-                        'trigger': 'advance',
-                        'source': 'ROG_Phone_3_Benchmark_Score',
-                        'dest': 'Menu',
-                        'conditions': 'is_going_to_Menu'
-                    },
-                    {
-                        'trigger': 'advance',
-                        'source': 'ROG_Phone_3_Benchmark_Score',
-                        'dest': 'Asus',
-                        'conditions': 'is_going_to_Asus'
-                    },
-                    {
-                        'trigger': 'advance',
-                        'source': 'ROG_Phone_3_Benchmark_Score',
-                        'dest': 'ROG',
-                        'conditions': 'is_going_to_ROG'
-                    },
-
-                    {
-                        'trigger': 'advance',
-                        'source': 'ROG_Phone_3',
-                        'dest': 'ROG_Phone_3_Video',
-                        'conditions': 'is_going_to_ROG_Phone_3_Video'
-                    },
-                    
-                    {
-                        'trigger': 'advance',
-                        'source': 'ROG_Phone_3_Video',
-                        'dest': 'Menu',
-                        'conditions': 'is_going_to_Menu'
-                    },
-                    {
-                        'trigger': 'advance',
-                        'source': 'ROG_Phone_3_Video',
-                        'dest': 'Asus',
-                        'conditions': 'is_going_to_Asus'
-                    },
-                    {
-                        'trigger': 'advance',
-                        'source': 'ROG_Phone_3_Video',
-                        'dest': 'ROG',
-                        'conditions': 'is_going_to_ROG'
-                    },
-                    {
-                        'trigger': 'advance',
-                        'source': 'ROG_Phone_3_Video',
-                        'dest': 'ROG_Phone_3',
-                        'conditions': 'is_going_to_ROG_Phone_3'
-                    },
                     
                     #ROG Phone 3 Strix
 
@@ -2146,15 +1955,16 @@ class TocMachine(GraphMachine):
                     {
                         'trigger': 'advance',
                         'source': 'ROG_Phone_3_Strix',
-                        'dest': 'ROG',
-                        'conditions': 'is_going_to_ROG'
+                        'dest': 'Asus',
+                        'conditions': 'is_going_to_Asus'
                     },
                     {
                         'trigger': 'advance',
                         'source': 'ROG_Phone_3_Strix',
-                        'dest': 'Asus',
-                        'conditions': 'is_going_to_Asus'
+                        'dest': 'ROG',
+                        'conditions': 'is_going_to_ROG'
                     },
+                    
                     {
                         'trigger': 'advance',
                         'source': 'ROG_Phone_3_Strix',
@@ -2322,9 +2132,6 @@ class TocMachine(GraphMachine):
                         'dest': 'ROG_Phone_3_Strix',
                         'conditions': 'is_going_to_ROG_Phone_3_Strix'
                     },
-
-                    
-                    
 
                 ],
                 "initial" : 'start',
@@ -2746,34 +2553,6 @@ class TocMachine(GraphMachine):
     def is_going_to_ROG(self, event):
         text = event.message.text
         return "ROG" in text and "Phone" not in text or "3" not in text or "Strix" not in text
-
-    #ROG Phone 3
-    def is_going_to_ROG_Phone_3(self, event):
-        text = event.message.text
-        return "ROG Phone 3" in text and "Strix" not in text
-    
-    def is_going_to_ROG_Phone_3_Price(self, event):
-        text = event.message.text
-        return "ROG Phone 3" in text and "Strix" not in text or "Price" in text 
-
-    def is_going_to_ROG_Phone_3_Specs(self, event):
-        text = event.message.text
-        return "ROG Phone 3" in text and "Strix" not in text or "Specs" in text  
-
-    def is_going_to_ROG_Phone_3_Pros_Cons(self, event):
-        text = event.message.text
-        #return "Iphone 12" and "Mini" not in text and "Pro" not in text or "Pros and Cons" in text
-        return "ROG Phone 3" in text and "Strix" not in text or "Pros and Cons" in text   
-
-    def is_going_to_ROG_Phone_3_Benchmark_Score(self, event):
-        text = event.message.text
-        #return "Iphone 12" and "Mini" not in text and "Pro" not in text or "Benchmark Score" in text  
-        return "ROG Phone 3" in text and "Strix" not in text or "Benchmark" in text
-
-    def is_going_to_ROG_Phone_3_Video(self, event):
-        text = event.message.text
-        #return "Iphone 12" and "Mini" not in text and "Pro" not in text or "Benchmark Score" in text  
-        return "ROG Phone 3" in text and "Strix" not in text or "Video" in text
 
     #ROG Phone 3 Strix
     def is_going_to_ROG_Phone_3_Strix(self, event):
@@ -4287,153 +4066,6 @@ class TocMachine(GraphMachine):
         reply_token = event.reply_token
         url = 'https://www.youtube.com/watch?v=OOxbMl1bYyw'
         send_text_message(reply_token, url)   
-
-    #ROG Phone 3
-    def on_enter_ROG_Phone_3(self, event):
-        print("I'm entering ROG Phone 3")
-        reply_token = event.reply_token
-        #text = "Please choose which information you want to know!"
-        #send_text_message(reply_token, text)
-        send_ROG_Phone_3_carousel(reply_token)
-
-    def on_enter_ROG_Phone_3_Price(self, event):
-        print("I'm entering ROG Phone 3's price")
-        reply_token = event.reply_token
-        word = "Price"
-        information = "The Price of ROG Phone 3:\n 8GB/128GB: NTD 19825\n 12GB/128GB: NTD 25010"
-        current = "ROG Phone 3"
-        brand = "Asus"
-        series = "ROG"
-        send_info_2(reply_token, word, information, current, brand, series)
-
-    def on_enter_ROG_Phone_3_Specs(self, event):
-        print("I'm entering ROG Phone 3's specs")
-        reply_token = event.reply_token
-        my_url = "https://www.gsmarena.com/asus_rog_phone_3-review-2137.php"
-
-        #opening up connection, grabbing the page
-        uClient = uReq(my_url)
-        page_html = uClient.read()
-        uClient.close()
-
-        #html parsing
-        page_soup = soup(page_html, "html.parser")
-
-        #grabs each product
-        containers = page_soup.findAll("ul", {"class":"article-blurb article-blurb-findings"})
-        lis = []
-        lis2 = []
-        for ul in containers:
-            for li in ul.findAll('li'):
-                    if li.find('ul'):
-                        break
-                    lis.append(li)
-
-        for li in lis:
-            test = str(li.text.encode("utf-8"))
-            mod_string = ""
-            
-            for i in range(1, len(test)):
-                mod_string = mod_string + test[i]
-                mod_string = mod_string.replace("'","")
-            lis2.append(mod_string)
-                
-        str1 = "\n\n"
-        str1 = str1.join(lis2)
-        
-
-        word = "Specs"
-        information = str1
-        current = "ROG Phone 3"
-        brand = "Asus"
-        series = "ROG"
-        send_info_2(reply_token, word, information, current, brand, series)
-
-    def on_enter_ROG_Phone_3_Pros_Cons(self, event):
-        print("I'm entering ROG Phone 3's pros and cons")
-        reply_token = event.reply_token
-        my_url = "https://www.gsmarena.com/asus_rog_phone_3-review-2137p8.php"
-
-        #opening up connection, grabbing the page
-        uClient = uReq(my_url)
-        page_html = uClient.read()
-        uClient.close()
-
-        #html parsing
-        page_soup = soup(page_html, "html.parser")
-
-        #grabs each product
-        containers = page_soup.findAll("ul", {"class":"article-blurb article-blurb-features"})
-        containers2 = page_soup.findAll("ul",{"class":"article-blurb article-blurb-disadvantages"})
-        lis = []
-        lis2 = []
-        lis3 = []
-        lis4 = []
-        for ul in containers:
-            for li in ul.findAll('li'):
-                    if li.find('ul'):
-                        break
-                    lis.append(li)
-
-        for li in lis:
-            test = str(li.text.encode("utf-8"))
-            mod_string = ""
-            
-            for i in range(1, len(test)):
-                mod_string = mod_string + test[i]
-                mod_string = mod_string.replace("'","")
-            lis2.append(mod_string)
-
-        lis2.append("\n")
-
-        for ul2 in containers2:
-            for li2 in ul2.findAll('li'):
-                    if li2.find('ul'):
-                        break
-                    lis3.append(li2)
-
-        for li in lis3:
-            test2 = str(li.text.encode("utf-8"))
-            mod_string2 = ""
-            
-            for i in range(1, len(test2)):
-                mod_string2 = mod_string2 + test2[i]
-                mod_string2 = mod_string2.replace("'","")
-            lis4.append(mod_string2)
-
-
-        str1 = "\n\n"
-        str2 = str1.join(lis2) 
-        str3 = "Pros\n\n\n" + str2 
-
-        str4 = "\n\n"
-        str5 = str4.join(lis4)
-        str6 = "Cons\n\n\n" + str5
-
-        str7 = str3 + str6
-        word = "Pros and Cons"
-        information = str7
-        current = "ROG Phone 3"
-        brand = "Asus"
-        series = "ROG"
-        send_info_2(reply_token, word, information, current, brand, series)
-
-    def on_enter_ROG_Phone_3_Benchmark_Score(self, event):
-        print("I'm entering ROG Phone 3's Benchmark Score")
-        reply_token = event.reply_token
-        x = "The Antutu Benchmark score of ROG Phone 3 is 626,992."
-        word = "Benchmark Score"
-        information = x
-        current = "ROG Phone 3"
-        brand = "Asus"
-        series = "ROG"
-        send_info_2(reply_token, word, information, current, brand, series)
-
-    def on_enter_ROG_Phone_3_Video(self, event): 
-        print("I'm entering ROG Phone 3's Video")
-        reply_token = event.reply_token
-        url = 'https://www.youtube.com/watch?v=IEwEDTmqCEs'
-        send_text_message(reply_token, url)    
 
     #ROG Phone 3 Strix
     def on_enter_ROG_Phone_3_Strix(self, event):

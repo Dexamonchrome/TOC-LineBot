@@ -1445,17 +1445,6 @@ def send_ROG_carousel(reply_token):
                     ]
                 ),
                 CarouselColumn(
-                    title="ROG Phone 3",
-                    text="Wanna own a ROG Phone 3?",
-                    thumbnail_image_url="https://fdn2.gsmarena.com/vv/bigpic/asus-rog-phone-3-zs661ks.jpg",
-                    actions=[
-                        MessageTemplateAction(
-                            label="Inquire",
-                            text="ROG Phone 3"
-                        ),
-                    ]
-                ),
-                CarouselColumn(
                     title="Asus",
                     text="Return Asus",
                     thumbnail_image_url="https://www.materialui.co/materialIcons/navigation/menu_grey_192x192.png",
@@ -1484,6 +1473,7 @@ def send_ROG_carousel(reply_token):
 
     return "OK"
 
+#Zenfone 7 Pro
 def send_Zenfone_7_Pro_carousel(reply_token):
     carousel_template = TemplateSendMessage(
         alt_text="Options",
@@ -1653,107 +1643,6 @@ def send_Zenfone_7_carousel(reply_token):
                         MessageTemplateAction(
                             label="Inquire",
                             text="Zenfone"
-                        ),
-                    ]
-                ),
-                CarouselColumn(
-                    title="Go back",
-                    text="Return Asus",
-                    thumbnail_image_url="https://static.thenounproject.com/png/393244-200.png",
-                    actions=[
-                        MessageTemplateAction(
-                            label="Inquire",
-                            text="Asus"
-                        ),
-                    ]
-                ),
-                CarouselColumn(
-                    title="Menu",
-                    text="Return Menu",
-                    thumbnail_image_url="https://www.materialui.co/materialIcons/navigation/menu_grey_192x192.png",
-                    actions=[
-                        MessageTemplateAction(
-                            label="Inquire",
-                            text="Menu"
-                        ),
-                    ]
-                ),
-            ]
-        )
-    )
-    line_bot_api.reply_message(reply_token, carousel_template)
-
-    return "OK"
-
-#ROG Phone 3
-def send_ROG_Phone_3_carousel(reply_token):
-    carousel_template = TemplateSendMessage(
-        alt_text="Options",
-        template=CarouselTemplate(
-            columns=[
-                CarouselColumn(
-                    title="Price $$$",
-                    text="Let's see if you can afford it HAHAHA",
-                    thumbnail_image_url="https://everyaustraliancounts.com.au/wp-content/uploads/price-wood.jpg",
-                    actions=[
-                        MessageTemplateAction(
-                            label="Inquire",
-                            text="ROG Phone 3 Price"
-                        ),
-                    ]
-                ),
-                CarouselColumn(
-                    title="Specs",
-                    text="Wanna see the specs of the device?",
-                    thumbnail_image_url="https://www.gsma.com/esim/wp-content/uploads/2012/10/Specifications.jpg",
-                    actions=[
-                        MessageTemplateAction(
-                            label="Inquire",
-                            text="ROG Phone 3 Specs"
-                        ),
-                    ]
-                ),
-                CarouselColumn(
-                    title="Pros and Cons",
-                    text="Wanna know the pros and cons?。",
-                    thumbnail_image_url="https://ardas-it.com/uploads/images/blogs/Pros-And-Cons-blog.jpg",
-                    actions=[
-                        MessageTemplateAction(
-                            label="Inquire",
-                            text="ROG Phone 3 Pros and Cons"
-                        ),
-                    ]
-                ),
-                CarouselColumn(
-                    title="Antutu Benchmark",
-                    text="Wanna see how powerful is your device?",
-                    thumbnail_image_url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkTpTs5D_l_o2c9OAvFTC7ZW4VEowytaFm0Q&usqp=CAU",
-                    actions=[
-                        MessageTemplateAction(
-                            label="Inquire",
-                            text="ROG Phone 3 Benchmark Score"
-                        ),
-                    ]
-                ),
-                CarouselColumn(
-                    title="MKBHD Review",
-                    text="Wanna see ROG Phone 3 Review?",
-                    thumbnail_image_url="https://www.geirangerfjord.no/upload/images/2018_general/film-and-vid.jpg",
-                    actions=[
-                        MessageTemplateAction(
-                            label="Inquire",
-                            text="ROG Phone 3 Video"
-                        ),
-                    ]
-                ),
-                CarouselColumn(
-                    title="Go back",
-                    text="Return ROG",
-                    thumbnail_image_url="https://static.thenounproject.com/png/393244-200.png",
-                    actions=[
-                        MessageTemplateAction(
-                            label="Inquire",
-                            text="ROG"
                         ),
                     ]
                 ),
