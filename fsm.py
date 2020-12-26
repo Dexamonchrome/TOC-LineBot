@@ -2758,22 +2758,22 @@ class TocMachine(GraphMachine):
 
     def is_going_to_ROG_Phone_3_Specs(self, event):
         text = event.message.text
-        return "ROG Phone 3 Specs" == text  
+        return "ROG Phone 3" in text and "Strix" not in text and "Specs" in text  
 
     def is_going_to_ROG_Phone_3_Pros_Cons(self, event):
         text = event.message.text
         #return "Iphone 12" and "Mini" not in text and "Pro" not in text or "Pros and Cons" in text
-        return "ROG Phone 3 Pros and Cons" == text   
+        return "ROG Phone 3" in text and "Strix" not in text and "Pros and Cons" in text   
 
     def is_going_to_ROG_Phone_3_Benchmark_Score(self, event):
         text = event.message.text
         #return "Iphone 12" and "Mini" not in text and "Pro" not in text or "Benchmark Score" in text  
-        return "ROG Phone 3 Benchmark Score" == text
+        return "ROG Phone 3" in text and "Strix" not in text and "Benchmark" in text
 
     def is_going_to_ROG_Phone_3_Video(self, event):
         text = event.message.text
         #return "Iphone 12" and "Mini" not in text and "Pro" not in text or "Benchmark Score" in text  
-        return "ROG Phone 3 Video" == text
+        return "ROG Phone 3" in text and "Strix" not in text and "Video" in text
 
     #ROG Phone 3 Strix
     def is_going_to_ROG_Phone_3_Strix(self, event):
