@@ -587,17 +587,6 @@ def send_Menu_carousel(reply_token):
                         ),
                     ]
                 ),
-                CarouselColumn(
-                    title="FSM",
-                    text="Wanna see the FSM?",
-                    thumbnail_image_url="https://github.com/Dexamonchrome/TOC-LineBot/blob/main/img/fsm.png",
-                    actions=[
-                        MessageTemplateAction(
-                            label="Inquire",
-                            text="FSM"
-                        ),
-                    ]
-                ),
             ]
         )
     )
