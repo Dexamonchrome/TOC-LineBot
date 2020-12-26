@@ -1792,8 +1792,8 @@ def send_fsm(reply_token):
     line_bot_api.reply_message(
         reply_token,
         ImageSendMessage(
-            original_content_url="https://github.com/Dexamonchrome/TOC-LineBot/blob/main/fsm.png",
-            preview_image_url="https://github.com/Dexamonchrome/TOC-LineBot/blob/main/fsm.png2",
+            original_content_url="https://github.com/Dexamonchrome/TOC-LineBot/blob/main/img/fsm.png?raw=true",
+            preview_image_url="https://github.com/Dexamonchrome/TOC-LineBot/blob/main/img/fsm.png?raw=true",
             quick_reply=QuickReply(items=[QuickReplyButton(action = MessageAction(label='Go back to menu', text='Menu'))])
             )
         )
