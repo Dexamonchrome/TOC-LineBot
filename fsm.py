@@ -115,14 +115,14 @@ class TocMachine(GraphMachine):
                         'source': 'Menu',
                         'dest': 'fsm_image',
                         'conditions': 'is_going_to_fsm_image'   
-                    }
+                    },
 
                     {
                         'trigger': 'advance',
                         'source': 'fsm_image',
                         'dest': 'Menu',
                         'conditions': 'is_going_to_Menu'   
-                    }
+                    },
 
                     #Apple
 
