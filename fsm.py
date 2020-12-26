@@ -2745,7 +2745,7 @@ class TocMachine(GraphMachine):
     #ROG
     def is_going_to_ROG(self, event):
         text = event.message.text
-        return "ROG" in text and "Phone 3" not in text or "Strix" not in text
+        return "ROG" in text and "Phone" not in text or "3" not in text or "Strix" not in text
 
     #ROG Phone 3
     def is_going_to_ROG_Phone_3(self, event):
