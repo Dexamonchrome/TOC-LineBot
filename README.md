@@ -19,7 +19,7 @@ There are 5 main kinds of templates in my line chatbot's interface namely: Start
 
 ### Start
 <p align=center>
-    <img src="img/Start.jpg" width="400" height="500">
+    <img src="img/Start.jpg" width="400" height="300">
 </p>
 
 In Start, the user will have no choice but to choose to go to Menu. The start only happens in the beginning or when the user wrote the wrong thing.
