@@ -26,7 +26,7 @@ In Start, the user will have no choice but to choose to go to Menu. The start on
 
 ### Menu
 <p align=center>
-    <img src="img/Menu.jpg" width="240" height="340">
+    <img src="img/Menu.jpg" width="400" height="500">
 </p>
 
 In Menu, the user will choose which phone brands they would like to look into.
@@ -59,22 +59,27 @@ directed to the phone models of that series.
 
 Once user chooses a phone, they have an option to choose know the information about the phone's price, specs, pros and cons, benchmark score, and video. For Apple, there
 would be no video.
+
 * Price
 <p align=center>
     <img src="img/Price.jpg" width="240" height="340">
 </p>
+
 * Specs
 <p align=center>
-    <img src="img/Specs.jpg" width="400" height="600">
+    <img src="img/Specs.jpg" width="400" height="1000">
 </p>
+
 * Pros and Cons
 <p align=center>
-    <img src="img/Pros and Cons.jpg" width="400" height="600">
+    <img src="img/Pros and Cons.jpg" width="400" height="1000">
 </p>
+
 * Benchmark Score
 <p align=center>
     <img src="img/Benchmark Score.jpg" width="240" height="340">
 </p>
+
 * Video
 <p align=center>
     <img src="img/Review Video.jpg" width="240" height="340">
