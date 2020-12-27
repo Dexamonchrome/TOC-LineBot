@@ -2157,445 +2157,445 @@ class TocMachine(GraphMachine):
 
     def is_going_to_Menu(self, event):
         text = event.message.text
-        return "Menu" in text or "menu" in text
+        return "menu" in str(text).lower() 
     
     def go_back_Menu(self,event):
         text = event.message.text
-        return "Menu" in Text or "menu" in text
+        return "menu" in str(text).lower() 
 
     #Apple
     def is_going_to_Apple(self, event):
         text = event.message.text
-        return "Apple" in text or "apple" in text
+        return "apple" in str(text).lower()
 
     def go_back_Apple(self, event):
         text = event.message.text
-        return "Apple" in text or "apple" in text
+        return "apple" in str(text).lower() 
     
     #Google
     def is_going_to_Google(self, event):
         text = event.message.text
-        return "Google" in text 
+        return "google" in str(text).lower() 
 
     def go_back_Google(self, event):
         text = event.message.text
-        return "Google" in text 
+        return "google" in str(text).lower() 
 
     #Sony
     def is_going_to_Sony(self, event):
         text = event.message.text
-        return "Sony" in text 
+        return "sony" in str(text).lower() 
 
     def go_back_Sony(self, event):
         text = event.message.text
-        return "Sony" in text 
+        return "sony" in str(text).lower() 
     
     #Asus
     def is_going_to_Asus(self, event):
         text = event.message.text
-        return "Asus" in text 
+        return "asus" in str(text).lower() 
 
     def go_back_Asus(self, event):
         text = event.message.text
-        return "Asus" in text 
+        return "asus" in str(text).lower() 
 
     #Zenfone
     def is_going_to_Zenfone(self, event):
         text = event.message.text
-        return "Zenfone" in text and "7" not in text or "Pro" not in text
+        return "zenfone" in str(text).lower() and "7" not in str(text).lower() or "pro" not in str(text).lower()
 
     # Iphone 12
     def is_going_to_IP12(self, event):
         text = event.message.text
-        return "Iphone 12" and "Mini" not in text and "Pro" not in text
+        return "iphone 12" in str(text).lower() and "mini" not in str(text).lower() and "pro" not in str(text).lower()
     
     def is_going_to_IP12_Price(self, event):
         text = event.message.text
-        return "Iphone 12" and "Mini" not in text and "Pro" not in text and "Price" in text 
+        return "iphone 12" in str(text).lower() and "mini" not in str(text).lower() and "pro" not in str(text).lower() and "price" in str(text).lower() 
 
     def is_going_to_IP12_Specs(self, event):
         text = event.message.text
-        return "Iphone 12" and "Mini" not in text and "Pro" not in text and "Specs" in text  
+        return "iphone 12" in str(text).lower() and "mini" not in str(text).lower() and "pro" not in str(text).lower() and "specs" in str(text).lower()  
 
     def is_going_to_IP12_Pros_Cons(self, event):
         text = event.message.text
         #return "Iphone 12" and "Mini" not in text and "Pro" not in text or "Pros and Cons" in text
-        return "Iphone 12 Pros and Cons" == text   
+        return "iphone 12 pros and cons" == text.lower()  
 
     def is_going_to_IP12_Benchmark_Score(self, event):
         text = event.message.text
         #return "Iphone 12" and "Mini" not in text and "Pro" not in text or "Benchmark Score" in text  
-        return "Iphone 12 Benchmark Score" == text
+        return "iphone 12 benchmark score" == text.lower()
     def is_going_to_fsm(self, event):
         text = event.message.text
         return "fsm" in str(text).lower()
 
     def go_back_IP12(self, event):
         text = event.message.text
-        return "Iphone 12" and "Mini" not in text and "Pro" not in text
+        return "iphone 12" in str(text).lower() and "mini" not in str(text).lower() and "pro" not in str(text).lower()
     
     # Iphone 12 Pro
     def is_going_to_IP12_Pro(self, event):
         text = event.message.text
-        return "Iphone 12" and "Mini" not in text and "Max" not in text and "Pro" in text
+        return "iphone 12" in str(text).lower() and "mini" not in str(text).lower() and "max" not in str(text).lower() and "pro" in str(text).lower()
     
     def is_going_to_IP12_Pro_Price(self, event):
         text = event.message.text
-        return "Iphone 12 Pro Price" in text 
+        return "iphone 12 pro price" in str(text).lower()
 
     def is_going_to_IP12_Pro_Specs(self, event):
         text = event.message.text
-        return "Iphone 12 Pro Specs" in text 
+        return "iphone 12 pro specs" in str(text).lower()
 
     def is_going_to_IP12_Pro_Pros_Cons(self, event):
         text = event.message.text
-        return "Iphone 12 Pro Pros and Cons" in text 
+        return "iphone 12 pro pros and cons" in str(text).lower()
 
     def is_going_to_IP12_Pro_Benchmark_Score(self, event):
         text = event.message.text
-        return "Iphone 12 Pro Benchmark Score" in text 
+        return "iphone 12 pro benchmark score" in str(text).lower() 
 
     def go_back_IP12_Pro(self, event):
         text = event.message.text
-        return "Iphone 12 Pro" and "Mini" not in text and "Max" not in text and "Pro" in text
+        return "iphone 12 pro" in str(text).lower() and "mini" not in str(text).lower() and "max" not in text and "pro" in str(text).lower()
 
     # Iphone 12 Pro Max
     def is_going_to_IP12_Pro_Max(self, event):
         text = event.message.text
-        return "Iphone 12" and "Mini" not in text and "Max" in text
+        return "iphone 12" in str(text).lower() and "mini" not in str(text).lower() and "max" in str(text).lower()
     
     def is_going_to_IP12_Pro_Max_Price(self, event):
         text = event.message.text
-        return "Iphone 12 Pro Max Price" in text 
+        return "iphone 12 pro max price" in str(text).lower()
 
     def is_going_to_IP12_Pro_Max_Specs(self, event):
         text = event.message.text
-        return "Iphone 12 Pro Max Specs" in text 
+        return "iphone 12 pro max specs" in str(text).lower()
 
     def is_going_to_IP12_Pro_Max_Pros_Cons(self, event):
         text = event.message.text
-        return "Iphone 12 Pro Max Pros and Cons" in text 
+        return "iphone 12 pro max pros and cons" in str(text).lower() 
 
     def is_going_to_IP12_Pro_Max_Benchmark_Score(self, event):
         text = event.message.text
-        return "Iphone 12 Pro Max Benchmark Score" in text 
+        return "iphone 12 pro max benchmark score" in str(text).lower() 
 
     def go_back_IP12_Pro_Max(self, event):
         text = event.message.text
-        return "Iphone 12 Pro" and "Mini" not in text and "Max" in text
+        return "iphone 12 pro" in str(text).lower() and "mini" not in str(text).lower() and "max" in str(text).lower()
     
 
     # Iphone 12 Mini
     def is_going_to_IP12_Mini(self, event):
         text = event.message.text
-        return "Iphone 12" and "Mini" in text and "Pro" not in text
+        return "iphone 12" in str(text).lower() and "mini" in str(text).lower() and "pro" not in str(text).lower()
     def is_going_to_IP12_Mini_Price(self, event):
         text = event.message.text
-        return "Iphone 12 Mini Price" in text 
+        return "iphone 12 mini price" in str(text).lower()
 
     def is_going_to_IP12_Mini_Specs(self, event):
         text = event.message.text
-        return "Iphone 12 Mini Specs" in text 
+        return "iphone 12 mini specs" in str(text).lower() 
 
     def is_going_to_IP12_Mini_Pros_Cons(self, event):
         text = event.message.text
-        return "Iphone 12 Mini Pros and Cons" in text 
+        return "iphone 12 mini pros and cons" in str(text).lower() 
 
     def is_going_to_IP12_Mini_Benchmark_Score(self, event):
         text = event.message.text
-        return "Iphone 12 Mini Benchmark Score" in text 
+        return "iphone 12 mini benchmark score" in str(text).lower() 
 
     def go_back_IP12_Mini(self, event):
         text = event.message.text
-        return "Iphone 12" and "Mini" in text and "Pro" not in text
+        return "iphone 12" in str(text).lower() and "mini" in str(text).lower() and "pro" not in str(text).lower()
 
     #Pixel 5
     def is_going_to_Pixel_5(self, event):
         text = event.message.text
-        return "Pixel 5" in text
+        return "pixel 5" in str(text).lower()
     
     def is_going_to_Pixel_5_Price(self, event):
         text = event.message.text
-        return "Pixel 5 Price" in text 
+        return "pixel 5 price" in str(text).lower() 
 
     def is_going_to_Pixel_5_Specs(self, event):
         text = event.message.text
-        return "Pixel 5 Specs" in text  
+        return "pixel 5 specs" in str(text).lower()  
 
     def is_going_to_Pixel_5_Pros_Cons(self, event):
         text = event.message.text
         #return "Iphone 12" and "Mini" not in text and "Pro" not in text or "Pros and Cons" in text
-        return "Pixel 5 Pros and Cons" == text   
+        return "pixel 5 pros and cons" == text.lower()   
 
     def is_going_to_Pixel_5_Benchmark_Score(self, event):
         text = event.message.text
         #return "Iphone 12" and "Mini" not in text and "Pro" not in text or "Benchmark Score" in text  
-        return "Pixel 5 Benchmark Score" == text
+        return "pixel 5 benchmark score" == text.lower()
 
     def is_going_to_Pixel_5_Video(self, event):
         text = event.message.text
         #return "Iphone 12" and "Mini" not in text and "Pro" not in text or "Benchmark Score" in text  
-        return "Pixel 5 Video" == text
+        return "pixel 5 video" == text.lower()
     
     def go_back_Pixel_5(self, event):
         text = event.message.text
-        return "Pixel 5" in text
+        return "pixel 5" in str(text).lower()
     
     #Pixel 4a
     def is_going_to_Pixel_4a(self, event):
         text = event.message.text
-        return "Pixel 4a" in text and "5G" not in text
+        return "pixel 4a" in str(text).lower() and "5g" not in str(text).lower()
     
     def is_going_to_Pixel_4a_Price(self, event):
         text = event.message.text
-        return "Pixel 4a Price" in text 
+        return "pixel 4a price" in str(text).lower() 
 
     def is_going_to_Pixel_4a_Specs(self, event):
         text = event.message.text
-        return "Pixel 4a Specs" in text  
+        return "pixel 4a specs" in str(text).lower()  
 
     def is_going_to_Pixel_4a_Pros_Cons(self, event):
         text = event.message.text
         #return "Iphone 12" and "Mini" not in text and "Pro" not in text or "Pros and Cons" in text
-        return "Pixel 4a Pros and Cons" == text   
+        return "pixel 4a pros and cons" == text.lower()   
 
     def is_going_to_Pixel_4a_Benchmark_Score(self, event):
         text = event.message.text
         #return "Iphone 12" and "Mini" not in text and "Pro" not in text or "Benchmark Score" in text  
-        return "Pixel 4a" in text and "Benchmark Score" in text
+        return "pixel 4a" in str(text).lower() and "benchmark score" in str(text).lower()
 
     def is_going_to_Pixel_4a_Video(self, event):
         text = event.message.text
         #return "Iphone 12" and "Mini" not in text and "Pro" not in text or "Benchmark Score" in text  
-        return "Pixel 4a Video" == text
+        return "pixel 4a video" == text.lower()
     
     def go_back_Pixel_4a(self, event):
         text = event.message.text
-        return "Pixel 4a" in text
+        return "pixel 4a" in str(text).lower()
 
     #Pixel 4a 5G
     def is_going_to_Pixel_4a_5G(self, event):
         text = event.message.text
-        return "Pixel 4a" in text and "5G" in text
+        return "pixel 4a" in str(text).lower() and "5g" in str(text).lower()
     
     def is_going_to_Pixel_4a_5G_Price(self, event):
         text = event.message.text
-        return "Pixel 4a 5G Price" in text 
+        return "pixel 4a 5g price" in str(text).lower() 
 
     def is_going_to_Pixel_4a_5G_Specs(self, event):
         text = event.message.text
-        return "Pixel 4a 5G Specs" in text  
+        return "pixel 4a 5g specs" in str(text).lower()  
 
     def is_going_to_Pixel_4a_5G_Pros_Cons(self, event):
         text = event.message.text
         #return "Iphone 12" and "Mini" not in text and "Pro" not in text or "Pros and Cons" in text
-        return "Pixel 4a 5G Pros and Cons" == text   
+        return "pixel 4a 5g pros and cons" == text.lower()   
 
     def is_going_to_Pixel_4a_5G_Benchmark_Score(self, event):
         text = event.message.text
         #return "Iphone 12" and "Mini" not in text and "Pro" not in text or "Benchmark Score" in text  
-        return "Pixel 4a 5G" in text and "Benchmark Score" in text
+        return "pixel 4a 5g" in str(text).lower() and "benchmark score" in str(text).lower()
 
     def is_going_to_Pixel_4a_5G_Video(self, event):
         text = event.message.text
         #return "Iphone 12" and "Mini" not in text and "Pro" not in text or "Benchmark Score" in text  
-        return "Pixel 4a 5G Video" == text
+        return "pixel 4a 5g video" == text.lower()
     
     def go_back_Pixel_4a_5G(self, event):
         text = event.message.text
-        return "Pixel 4a 5G" in text
+        return "pixel 4a 5g" in str(text).lower()
 
     #Xperia 5 II
     def is_going_to_Xperia_5_II(self, event):
         text = event.message.text
-        return "Xperia 5 II" == text
+        return "xperia 5 ii" == text.lower()
     
     def is_going_to_Xperia_5_II_Price(self, event):
         text = event.message.text
-        return "Xperia 5 II Price" == text 
+        return "xperia 5 ii price" == text.lower() 
 
     def is_going_to_Xperia_5_II_Specs(self, event):
         text = event.message.text
-        return "Xperia 5 II Specs" == text  
+        return "xperia 5 ii specs" == text.lower()   
 
     def is_going_to_Xperia_5_II_Pros_Cons(self, event):
         text = event.message.text
         #return "Iphone 12" and "Mini" not in text and "Pro" not in text or "Pros and Cons" in text
-        return "Xperia 5 II Pros and Cons" == text   
+        return "xperia 5 ii pros and cons" == text.lower()   
 
     def is_going_to_Xperia_5_II_Benchmark_Score(self, event):
         text = event.message.text
         #return "Iphone 12" and "Mini" not in text and "Pro" not in text or "Benchmark Score" in text  
-        return "Xperia 5 II Benchmark Score" == text
+        return "xperia 5 ii benchmark score" == text.lower() 
 
     def is_going_to_Xperia_5_II_Video(self, event):
         text = event.message.text
         #return "Iphone 12" and "Mini" not in text and "Pro" not in text or "Benchmark Score" in text  
-        return "Xperia 5 II Video" == text
+        return "xperia 5 ii video" == text.lower() 
     
     def go_back_Xperia_5_II(self, event):
         text = event.message.text
-        return "Xperia 5 II" == text
+        return "xperia 5 ii" == text.lower() 
 
 
     #Xperia 1 II
     def is_going_to_Xperia_1_II(self, event):
         text = event.message.text
-        return "Xperia 1 II" == text
+        return "xperia 1 ii" == text.lower() 
     
     def is_going_to_Xperia_1_II_Price(self, event):
         text = event.message.text
-        return "Xperia 1 II Price" == text 
+        return "xperia 1 ii price" == text.lower() 
 
     def is_going_to_Xperia_1_II_Specs(self, event):
         text = event.message.text
-        return "Xperia 1 II Specs" == text  
+        return "xperia 1 ii specs" == text.lower() 
 
     def is_going_to_Xperia_1_II_Pros_Cons(self, event):
         text = event.message.text
         #return "Iphone 12" and "Mini" not in text and "Pro" not in text or "Pros and Cons" in text
-        return "Xperia 1 II Pros and Cons" == text   
+        return "xperia 1 ii pros and cons" == text.lower()    
 
     def is_going_to_Xperia_1_II_Benchmark_Score(self, event):
         text = event.message.text
         #return "Iphone 12" and "Mini" not in text and "Pro" not in text or "Benchmark Score" in text  
-        return "Xperia 1 II Benchmark Score" == text
+        return "xperia 1 ii benchmark score" == text.lower() 
 
     def is_going_to_Xperia_1_II_Video(self, event):
         text = event.message.text
         #return "Iphone 12" and "Mini" not in text and "Pro" not in text or "Benchmark Score" in text  
-        return "Xperia 1 II Video" == text
+        return "xperia 1 ii video" == text.lower() 
     
     def go_back_Xperia_1_II(self, event):
         text = event.message.text
-        return "Xperia 1 II" == text
+        return "xperia 1 ii" == text.lower() 
 
 
     #Xperia 10 II
     def is_going_to_Xperia_10_II(self, event):
         text = event.message.text
-        return "Xperia 10 II" == text
+        return "xperia 10 ii" == text.lower() 
     
     def is_going_to_Xperia_10_II_Price(self, event):
         text = event.message.text
-        return "Xperia 10 II Price" == text 
+        return "xperia 10 ii price" == text.lower() 
 
     def is_going_to_Xperia_10_II_Specs(self, event):
         text = event.message.text
-        return "Xperia 10 II Specs" == text  
+        return "xperia 10 ii specs" == text.lower()  
 
     def is_going_to_Xperia_10_II_Pros_Cons(self, event):
         text = event.message.text
         #return "Iphone 12" and "Mini" not in text and "Pro" not in text or "Pros and Cons" in text
-        return "Xperia 10 II Pros and Cons" == text   
+        return "xperia 10 ii pros and cons" == text.lower() 
 
     def is_going_to_Xperia_10_II_Benchmark_Score(self, event):
         text = event.message.text
         #return "Iphone 12" and "Mini" not in text and "Pro" not in text or "Benchmark Score" in text  
-        return "Xperia 10 II Benchmark Score" == text
+        return "xperia 10 ii benchmark score" == text.lower() 
 
     def is_going_to_Xperia_10_II_Video(self, event):
         text = event.message.text
         #return "Iphone 12" and "Mini" not in text and "Pro" not in text or "Benchmark Score" in text  
-        return "Xperia 10 II Video" == text
+        return "xperia 10 ii video" == text.lower() 
     
     def go_back_Xperia_10_II(self, event):
         text = event.message.text
-        return "Xperia 10 II" == text
+        return "xperia 10 ii" == text.lower() 
 
     #Zenfone
     def is_going_to_Zenfone(self, event): 
         text = event.message.text
-        return "Zenfone" in text and "7" not in text
+        return "zenfone" in str(text).lower() and "7" not in str(text).lower()
 
     #Zenfone 7
     def is_going_to_Zenfone_7(self, event):
         text = event.message.text
-        return "Zenfone 7" in text and "Pro" not in text
+        return "zenfone 7" in str(text).lower() and "pro" not in str(text).lower()
     
     def is_going_to_Zenfone_7_Price(self, event):
         text = event.message.text
-        return "Zenfone" in text and "Pro" not in text and "7" in text and "Price" in text 
+        return "zenfone" in str(text).lower() and "pro" not in str(text).lower() and "7" in str(text).lower() and "price" in str(text).lower() 
 
     def is_going_to_Zenfone_7_Specs(self, event):
         text = event.message.text
-        return "Zenfone 7" in text and "Specs" in text  
+        return "zenfone 7" in str(text).lower() and "specs" in str(text).lower()  
 
     def is_going_to_Zenfone_7_Pros_Cons(self, event):
         text = event.message.text
         #return "Iphone 12" and "Mini" not in text and "Pro" not in text or "Pros and Cons" in text
-        return "Zenfone 7 Pros and Cons" == text   
+        return "zenfone 7 pros and cons" == text.lower() 
 
     def is_going_to_Zenfone_7_Benchmark_Score(self, event):
         text = event.message.text
         #return "Iphone 12" and "Mini" not in text and "Pro" not in text or "Benchmark Score" in text  
-        return "Zenfone 7 Benchmark Score" == text
+        return "zenfone 7 benchmark score" == text.lower() 
 
     def is_going_to_Zenfone_7_Video(self, event):
         text = event.message.text
         #return "Iphone 12" and "Mini" not in text and "Pro" not in text or "Benchmark Score" in text  
-        return "Zenfone 7 Video" == text
+        return "zenfone 7 video" == text.lower() 
 
     #Zenfone 7 Pro
     def is_going_to_Zenfone_7_Pro(self, event):
         text = event.message.text
-        return "Zenfone 7 Pro" == text
+        return "zenfone 7 pro" == text.lower() 
     
     def is_going_to_Zenfone_7_Pro_Price(self, event):
         text = event.message.text
-        return "Zenfone 7" in text and "Pro Price" in text
+        return "zenfone 7" in str(text).lower() and "pro price" in str(text).lower()
 
     def is_going_to_Zenfone_7_Pro_Specs(self, event):
         text = event.message.text
-        return "Zenfone 7 Pro Specs" == text  
+        return "zenfone 7 pro specs" == text.lower() 
 
     def is_going_to_Zenfone_7_Pro_Pros_Cons(self, event):
         text = event.message.text
         #return "Iphone 12" and "Mini" not in text and "Pro" not in text or "Pros and Cons" in text
-        return "Zenfone 7 Pro Pros and Cons" == text   
+        return "zenfone 7 pro pros and cons" == text.lower() 
 
     def is_going_to_Zenfone_7_Pro_Benchmark_Score(self, event):
         text = event.message.text
         #return "Iphone 12" and "Mini" not in text and "Pro" not in text or "Benchmark Score" in text  
-        return "Zenfone 7 Pro Benchmark Score" == text
+        return "zenfone 7 pro benchmark score" == text.lower() 
 
     def is_going_to_Zenfone_7_Pro_Video(self, event):
         text = event.message.text
         #return "Iphone 12" and "Mini" not in text and "Pro" not in text or "Benchmark Score" in text  
-        return "Zenfone 7" in text and "Pro" in text and "Video" in text
+        return "zenfone 7" in str(text).lower() and "pro" in str(text).lower() and "video" in str(text).lower()
 
     #ROG
     def is_going_to_ROG(self, event):
         text = event.message.text
-        return "ROG" in text and "Phone" not in text or "3" not in text or "Strix" not in text
+        return "rog" in str(text).lower() and "phone" not in str(text).lower() or "3" not in str(text).lower() or "strix" not in str(text).lower()
 
     #ROG Phone 3 Strix
     def is_going_to_ROG_Phone_3_Strix(self, event):
         text = event.message.text
-        return "ROG Phone 3 Strix" == text
+        return "rog phone 3 strix" == text.lower()
     
     def is_going_to_ROG_Phone_3_Strix_Price(self, event):
         text = event.message.text
-        return "ROG Phone 3" in text and "Strix" in text and "Price" in text
+        return "rog phone 3" in str(text).lower() and "strix" in str(text).lower() and "price" in str(text).lower()
 
     def is_going_to_ROG_Phone_3_Strix_Specs(self, event):
         text = event.message.text
-        return "ROG Phone 3 Strix Specs" == text  
+        return "rog phone 3 strix specs" == text.lower()  
 
     def is_going_to_ROG_Phone_3_Strix_Pros_Cons(self, event):
         text = event.message.text
         #return "Iphone 12" and "Mini" not in text and "Pro" not in text or "Pros and Cons" in text
-        return "ROG Phone 3 Strix Pros and Cons" == text   
+        return "rog phone 3 strix pros and cons" == text.lower()   
 
     def is_going_to_ROG_Phone_3_Strix_Benchmark_Score(self, event):
         text = event.message.text
         #return "Iphone 12" and "Mini" not in text and "Pro" not in text or "Benchmark Score" in text  
-        return "ROG Phone 3 Strix Benchmark Score" == text
+        return "rog phone 3 strix benchmark score" == text.lower()
 
     def is_going_to_ROG_Phone_3_Strix_Video(self, event):
         text = event.message.text
         #return "Iphone 12" and "Mini" not in text and "Pro" not in text or "Benchmark Score" in text  
-        return "ROG Phone 3 Strix Video" == text
+        return "rog phone 3 strix video" == text.lower()
 
 
 
