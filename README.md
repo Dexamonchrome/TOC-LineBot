@@ -65,11 +65,11 @@ would be no video.
 </p>
 * Specs
 <p align=center>
-    <img src="img/Specs.jpg" width="240" height="340">
+    <img src="img/Specs.jpg" width="400" height="600">
 </p>
 * Pros and Cons
 <p align=center>
-    <img src="img/Pros and Cons.jpg" width="240" height="340">
+    <img src="img/Pros and Cons.jpg" width="400" height="600">
 </p>
 * Benchmark Score
 <p align=center>
@@ -82,7 +82,7 @@ would be no video.
 
 ### FSM
 <p align=center>
-    <img src="img/fsm.jpg" width="240" height="340">
+    <img src="img/fsm.png" width="500" height="500">
 </p>
 * Shows the FSM graph
 
