@@ -2,7 +2,7 @@
 
 ## ApAsSogo
 ## QR Code
-<img src="img/QR Code.JPG" width="400" height="300">
+<img src="img/QR Code.JPG" width="600" height="300">
 
 ## Finite State Machine
 ![fsm](https://github.com/Dexamonchrome/TOC-LineBot/blob/master/fsm.png)
