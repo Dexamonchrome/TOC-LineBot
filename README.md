@@ -19,7 +19,7 @@ There are 5 main kinds of templates in my line chatbot's interface namely: Start
 
 ### Start
 <p align=center>
-    <img src="img/Start.jpg" width="240" height="340">
+    <img src="img/Start.jpg" width="400" height="500">
 </p>
 
 In Start, the user will have no choice but to choose to go to Menu. The start only happens in the beginning or when the user wrote the wrong thing.
@@ -33,26 +33,26 @@ In Menu, the user will choose which phone brands they would like to look into.
 
 ### Brand
 <p align=center>
-    <img src="img/Apple.jpg" width="240" height="340">
+    <img src="img/Apple.jpg" width="400" height="500">
 </p>
 <p align=center>
-    <img src="img/Asus Chooser.jpg" width="240" height="340">
+    <img src="img/Asus Chooser.jpg" width="400" height="500">
 </p>
 <p align=center>
-    <img src="img/Google.jpg" width="240" height="340">
+    <img src="img/Google.jpg" width="400" height="500">
 </p>
 <p align=center>
-    <img src="img/Sony.jpg" width="240" height="340">
+    <img src="img/Sony.jpg" width="400" height="500">
 </p>
 
 Once user chooses a brand, they will be directed to the phone models of the brand but for Asus it will be the series. After the series is chosen, users will be 
 directed to the phone models of that series.
 
 <p align=center>
-    <img src="img/Zenfone.jpg" width="240" height="340">
+    <img src="img/Zenfone.jpg" width="400" height="500">
 </p>
 <p align=center>
-    <img src="img/ROG.jpg" width="240" height="340">
+    <img src="img/ROG.jpg" width="400" height="500">
 </p>
 
 ### Phones
@@ -62,7 +62,7 @@ would be no video.
 
 * Price
 <p align=center>
-    <img src="img/Price.jpg" width="240" height="340">
+    <img src="img/Price.jpg" width="400" height="500">
 </p>
 
 * Specs
@@ -82,13 +82,14 @@ would be no video.
 
 * Video
 <p align=center>
-    <img src="img/Review Video.jpg" width="240" height="340">
+    <img src="img/Review Video.jpg" width="400" height="500">
 </p>
 
 ### FSM
 <p align=center>
-    <img src="img/fsm.png" width="500" height="500">
+    <img src="img/fsm.png" width="1000" height="1000">
 </p>
+
 * Shows the FSM graph
 
 ## Reference
