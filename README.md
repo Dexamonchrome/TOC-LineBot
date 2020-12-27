@@ -1,8 +1,8 @@
 # TOC Project 2020
 
 ## ApAsSogo
-##QR Code
-<img src="img/QR Code.jpg" width="400" height="300">
+## QR Code
+<img src="img/QR Code.JPG" width="400" height="300">
 
 ## Finite State Machine
 ![fsm](https://github.com/Dexamonchrome/TOC-LineBot/blob/master/fsm.png)
