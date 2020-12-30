@@ -14,6 +14,7 @@ class TocMachine(GraphMachine):
                 "states" : [
                     'start',
                     'Menu',
+                    'Hi'
                     'Apple',
                     'IP12_Mini',
                     'IP12_Mini_Price',
@@ -109,6 +110,20 @@ class TocMachine(GraphMachine):
                         'dest': 'Menu',
                         'conditions': 'is_going_to_Menu'
                     },
+                    #Hi
+                    {
+                        'trigger': 'advance',
+                        'source': 'Menu',
+                        'dest': 'Hi',
+                        'conditions': 'is_going_to_Hi'
+                    },
+                    {
+                        'trigger': 'advance',
+                        'source': 'Hi',
+                        'dest': 'Menu',
+                        'conditions': 'is_going_to_Menu'
+                    },
+
                     
 
                     #Apple
@@ -2158,6 +2173,10 @@ class TocMachine(GraphMachine):
     def is_going_to_Menu(self, event):
         text = event.message.text
         return "menu" in str(text).lower() 
+
+    def is_going_to_Hi(self,event): 
+        text = event.message.text
+        return "hi" in str(text).lower() 
     
     def go_back_Menu(self,event):
         text = event.message.text
@@ -2612,6 +2631,11 @@ class TocMachine(GraphMachine):
         #send_text_message(reply_token, text)
         #send_go_to_menu_button(reply_token)
         send_Menu_carousel(reply_token)
+    
+    def on_enter_Hi(self, event):
+        reply_token = event.reply_token
+        send_text_message(reply_token)
+
     # back to Iphone 12
     def on_enter_Back_IP12(self,event):
         print("I'm entering Iphone 12")
