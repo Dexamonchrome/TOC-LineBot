@@ -2634,7 +2634,8 @@ class TocMachine(GraphMachine):
     
     def on_enter_Hi(self, event):
         reply_token = event.reply_token
-        send_text_message(reply_token)
+        text = "hi"
+        send_text_message(reply_token, text)
 
     # back to Iphone 12
     def on_enter_Back_IP12(self,event):

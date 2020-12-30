@@ -587,6 +587,17 @@ def send_Menu_carousel(reply_token):
                         ),
                     ]
                 ),
+                CarouselColumn(
+                    title="Hi",
+                    text="Say Hi?",
+                    thumbnail_image_url="https://i.pinimg.com/originals/b8/16/18/b81618a49af61d212187ebcb997d96e9.jpg",
+                    actions=[
+                        MessageTemplateAction(
+                            label="Inquire",
+                            text="hi"
+                        ),
+                    ]
+                ),
             ]
         )
     )
