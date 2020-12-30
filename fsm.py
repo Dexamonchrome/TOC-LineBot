@@ -2633,9 +2633,13 @@ class TocMachine(GraphMachine):
         send_Menu_carousel(reply_token)
     
     def on_enter_Hi(self, event):
+        print("I'm entering Hi")
         reply_token = event.reply_token
-        text = "hi"
-        send_text_message(reply_token, text)
+        word = "Hi"
+        information = "Hi"
+        current = "Hi"
+        brand = "Menu"
+        send_info(reply_token, word, information, current, brand)
 
     # back to Iphone 12
     def on_enter_Back_IP12(self,event):

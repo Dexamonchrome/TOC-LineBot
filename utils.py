@@ -594,7 +594,7 @@ def send_Menu_carousel(reply_token):
                     actions=[
                         MessageTemplateAction(
                             label="Inquire",
-                            text="hi"
+                            text="Hi"
                         ),
                     ]
                 ),
